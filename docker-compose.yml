@@ -1,0 +1,33 @@
+version: '3'
+services:
+  jupyter:
+    image: jupyter/base-notebook
+    container_name: jupyter
+    hostname: jupyter
+    restart: unless-stopped
+    user: root
+    ports:
+      - '8888:8888'
+    volumes:
+      - ./volumes/jupyter:/home/jovyan/
+  influxdb:
+    image: influxdb
+    container_name: influxdb
+    hostname: influxdb
+    restart: unless-stopped
+    user: root
+    ports:
+      - '8086:8086'
+      - '8083:8083'
+    volumes:
+      - ./volumes/influxdb:/var/lib/influxdb/
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    hostname: grafana
+    restart: unless-stopped
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./volumes/grafana:/var/lib/grafana/
+    user: root

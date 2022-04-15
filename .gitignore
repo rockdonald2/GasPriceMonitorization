@@ -1,0 +1,4 @@
+volumes
+vendor
+.vscode
+.env
