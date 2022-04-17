@@ -11,7 +11,7 @@ services:
     volumes:
       - ./volumes/jupyter:/home/jovyan/
   influxdb:
-    image: influxdb
+    image: influxdb:1.8
     container_name: influxdb
     hostname: influxdb
     restart: unless-stopped
