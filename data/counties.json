@@ -3,7 +3,7 @@
     "County": "Alba",
     "County Seat": "Alba Iulia",
     "Development Region": "Center",
-    "ISO Code": "AB",
+    "ISO Code": "RO-AB",
     "NUTS Code": "RO121",
     "Population": 342376
   },
@@ -11,7 +11,7 @@
     "County": "Arad",
     "County Seat": "Arad",
     "Development Region": "West",
-    "ISO Code": "AR",
+    "ISO Code": "RO-AR",
     "NUTS Code": "RO421",
     "Population": 430629
   },
@@ -19,7 +19,7 @@
     "County": "Arge\u0219",
     "County Seat": "Pite\u0219ti",
     "Development Region": "South-Muntenia",
-    "ISO Code": "AG",
+    "ISO Code": "RO-AG",
     "NUTS Code": "RO311",
     "Population": 612431
   },
@@ -27,7 +27,7 @@
     "County": "Bac\u0103u",
     "County Seat": "Bac\u0103u",
     "Development Region": "North-East",
-    "ISO Code": "BC",
+    "ISO Code": "RO-BC",
     "NUTS Code": "RO211",
     "Population": 616168
   },
@@ -35,7 +35,7 @@
     "County": "Bihor",
     "County Seat": "Oradea",
     "Development Region": "North-West",
-    "ISO Code": "BH",
+    "ISO Code": "RO-BH",
     "NUTS Code": "RO111",
     "Population": 575398
   },
@@ -43,7 +43,7 @@
     "County": "Bistri\u021ba-N\u0103s\u0103ud",
     "County Seat": "Bistri\u021ba",
     "Development Region": "North-West",
-    "ISO Code": "BN",
+    "ISO Code": "RO-BN",
     "NUTS Code": "RO112",
     "Population": 286225
   },
@@ -51,7 +51,7 @@
     "County": "Boto\u0219ani",
     "County Seat": "Boto\u0219ani",
     "Development Region": "North-East",
-    "ISO Code": "BT",
+    "ISO Code": "RO-BT",
     "NUTS Code": "RO212",
     "Population": 412626
   },
@@ -59,7 +59,7 @@
     "County": "Bra\u0219ov",
     "County Seat": "Bra\u0219ov",
     "Development Region": "Center",
-    "ISO Code": "BV",
+    "ISO Code": "RO-BV",
     "NUTS Code": "RO122",
     "Population": 549217
   },
@@ -67,15 +67,15 @@
     "County": "Br\u0103ila",
     "County Seat": "Br\u0103ila",
     "Development Region": "South-East",
-    "ISO Code": "BR",
+    "ISO Code": "RO-BR",
     "NUTS Code": "RO221",
     "Population": 321212
   },
   {
-    "County": "Bucharest",
+    "County": "Bucure\u0219ti",
     "County Seat": "Bucharest",
     "Development Region": "Bucharest-Ilfov",
-    "ISO Code": "B",
+    "ISO Code": "RO-B",
     "NUTS Code": "RO321",
     "Population": 1883425
   },
@@ -83,7 +83,7 @@
     "County": "Buz\u0103u",
     "County Seat": "Buz\u0103u",
     "Development Region": "South-East",
-    "ISO Code": "BZ",
+    "ISO Code": "RO-BZ",
     "NUTS Code": "RO222",
     "Population": 451069
   },
@@ -91,7 +91,7 @@
     "County": "Cara\u0219-Severin",
     "County Seat": "Re\u0219i\u021ba",
     "Development Region": "West",
-    "ISO Code": "CS",
+    "ISO Code": "RO-CS",
     "NUTS Code": "RO422",
     "Population": 295579
   },
@@ -99,7 +99,7 @@
     "County": "C\u0103l\u0103ra\u0219i",
     "County Seat": "C\u0103l\u0103ra\u0219i",
     "Development Region": "South-Muntenia",
-    "ISO Code": "CL",
+    "ISO Code": "RO-CL",
     "NUTS Code": "RO312",
     "Population": 306691
   },
@@ -107,7 +107,7 @@
     "County": "Cluj",
     "County Seat": "Cluj-Napoca",
     "Development Region": "North-West",
-    "ISO Code": "CJ",
+    "ISO Code": "RO-CJ",
     "NUTS Code": "RO113",
     "Population": 691106
   },
@@ -115,7 +115,7 @@
     "County": "Constan\u021ba",
     "County Seat": "Constan\u021ba",
     "Development Region": "South-East",
-    "ISO Code": "CT",
+    "ISO Code": "RO-CT",
     "NUTS Code": "RO223",
     "Population": 684082
   },
@@ -123,7 +123,7 @@
     "County": "Covasna",
     "County Seat": "Sf\u00e2ntu Gheorghe",
     "Development Region": "Center",
-    "ISO Code": "CV",
+    "ISO Code": "RO-CV",
     "NUTS Code": "RO123",
     "Population": 210177
   },
@@ -131,7 +131,7 @@
     "County": "D\u00e2mbovi\u021ba",
     "County Seat": "T\u00e2rgovi\u0219te",
     "Development Region": "South-Muntenia",
-    "ISO Code": "DB",
+    "ISO Code": "RO-DB",
     "NUTS Code": "RO313",
     "Population": 518745
   },
@@ -139,7 +139,7 @@
     "County": "Dolj",
     "County Seat": "Craiova",
     "Development Region": "South-West Oltenia",
-    "ISO Code": "DJ",
+    "ISO Code": "RO-DJ",
     "NUTS Code": "RO411",
     "Population": 660544
   },
@@ -147,7 +147,7 @@
     "County": "Gala\u021bi",
     "County Seat": "Gala\u021bi",
     "Development Region": "South-East",
-    "ISO Code": "GL",
+    "ISO Code": "RO-GL",
     "NUTS Code": "RO224",
     "Population": 536167
   },
@@ -155,7 +155,7 @@
     "County": "Giurgiu",
     "County Seat": "Giurgiu",
     "Development Region": "South-Muntenia",
-    "ISO Code": "GR",
+    "ISO Code": "RO-GR",
     "NUTS Code": "RO314",
     "Population": 281422
   },
@@ -163,7 +163,7 @@
     "County": "Gorj",
     "County Seat": "T\u00e2rgu Jiu",
     "Development Region": "South-West Oltenia",
-    "ISO Code": "GJ",
+    "ISO Code": "RO-GJ",
     "NUTS Code": "RO412",
     "Population": 341594
   },
@@ -171,7 +171,7 @@
     "County": "Harghita",
     "County Seat": "Miercurea Ciuc",
     "Development Region": "Center",
-    "ISO Code": "HR",
+    "ISO Code": "RO-HR",
     "NUTS Code": "RO124",
     "Population": 310867
   },
@@ -179,7 +179,7 @@
     "County": "Hunedoara",
     "County Seat": "Deva",
     "Development Region": "West",
-    "ISO Code": "HD",
+    "ISO Code": "RO-HD",
     "NUTS Code": "RO423",
     "Population": 418565
   },
@@ -187,7 +187,7 @@
     "County": "Ialomi\u021ba",
     "County Seat": "Slobozia",
     "Development Region": "South-Muntenia",
-    "ISO Code": "IL",
+    "ISO Code": "RO-IL",
     "NUTS Code": "RO315",
     "Population": 274148
   },
@@ -195,7 +195,7 @@
     "County": "Ia\u0219i",
     "County Seat": "Ia\u0219i",
     "Development Region": "North-East",
-    "ISO Code": "IS",
+    "ISO Code": "RO-IS",
     "NUTS Code": "RO213",
     "Population": 772348
   },
@@ -203,7 +203,7 @@
     "County": "Ilfov",
     "County Seat": "Buftea",
     "Development Region": "Bucharest-Ilfov",
-    "ISO Code": "IF",
+    "ISO Code": "RO-IF",
     "NUTS Code": "RO322",
     "Population": 388738
   },
@@ -211,7 +211,7 @@
     "County": "Maramure\u0219",
     "County Seat": "Baia Mare",
     "Development Region": "North-West",
-    "ISO Code": "MM",
+    "ISO Code": "RO-MM",
     "NUTS Code": "RO114",
     "Population": 478659
   },
@@ -219,7 +219,7 @@
     "County": "Mehedin\u021bi",
     "County Seat": "Drobeta-Turnu Severin",
     "Development Region": "South-West Oltenia",
-    "ISO Code": "MH",
+    "ISO Code": "RO-MH",
     "NUTS Code": "RO413",
     "Population": 265390
   },
@@ -227,7 +227,7 @@
     "County": "Mure\u0219",
     "County Seat": "T\u00e2rgu Mure\u0219",
     "Development Region": "Center",
-    "ISO Code": "MS",
+    "ISO Code": "RO-MS",
     "NUTS Code": "RO125",
     "Population": 550846
   },
@@ -235,7 +235,7 @@
     "County": "Neam\u021b",
     "County Seat": "Piatra Neam\u021b",
     "Development Region": "North-East",
-    "ISO Code": "NT",
+    "ISO Code": "RO-NT",
     "NUTS Code": "RO214",
     "Population": 470766
   },
@@ -243,7 +243,7 @@
     "County": "Olt",
     "County Seat": "Slatina",
     "Development Region": "South-West Oltenia",
-    "ISO Code": "OT",
+    "ISO Code": "RO-OT",
     "NUTS Code": "RO414",
     "Population": 436400
   },
@@ -251,7 +251,7 @@
     "County": "Prahova",
     "County Seat": "Ploie\u0219ti",
     "Development Region": "South-Muntenia",
-    "ISO Code": "PH",
+    "ISO Code": "RO-PH",
     "NUTS Code": "RO316",
     "Population": 762886
   },
@@ -259,7 +259,7 @@
     "County": "Satu Mare",
     "County Seat": "Satu Mare",
     "Development Region": "North-West",
-    "ISO Code": "SM",
+    "ISO Code": "RO-SM",
     "NUTS Code": "RO115",
     "Population": 344360
   },
@@ -267,7 +267,7 @@
     "County": "S\u0103laj",
     "County Seat": "Zal\u0103u",
     "Development Region": "North-West",
-    "ISO Code": "SJ",
+    "ISO Code": "RO-SJ",
     "NUTS Code": "RO116",
     "Population": 224384
   },
@@ -275,7 +275,7 @@
     "County": "Sibiu",
     "County Seat": "Sibiu",
     "Development Region": "Center",
-    "ISO Code": "SB",
+    "ISO Code": "RO-SB",
     "NUTS Code": "RO126",
     "Population": 397322
   },
@@ -283,7 +283,7 @@
     "County": "Suceava",
     "County Seat": "Suceava",
     "Development Region": "North-East",
-    "ISO Code": "SV",
+    "ISO Code": "RO-SV",
     "NUTS Code": "RO215",
     "Population": 634810
   },
@@ -291,7 +291,7 @@
     "County": "Teleorman",
     "County Seat": "Alexandria",
     "Development Region": "South-Muntenia",
-    "ISO Code": "TR",
+    "ISO Code": "RO-TR",
     "NUTS Code": "RO317",
     "Population": 380123
   },
@@ -299,7 +299,7 @@
     "County": "Timi\u0219",
     "County Seat": "Timi\u0219oara",
     "Development Region": "West",
-    "ISO Code": "TM",
+    "ISO Code": "RO-TM",
     "NUTS Code": "RO424",
     "Population": 683540
   },
@@ -307,7 +307,7 @@
     "County": "Tulcea",
     "County Seat": "Tulcea",
     "Development Region": "South-East",
-    "ISO Code": "TL",
+    "ISO Code": "RO-TL",
     "NUTS Code": "RO225",
     "Population": 213083
   },
@@ -315,7 +315,7 @@
     "County": "Vaslui",
     "County Seat": "Vaslui",
     "Development Region": "North-East",
-    "ISO Code": "VS",
+    "ISO Code": "RO-VS",
     "NUTS Code": "RO216",
     "Population": 395499
   },
@@ -323,7 +323,7 @@
     "County": "V\u00e2lcea",
     "County Seat": "R\u00e2mnicu V\u00e2lcea",
     "Development Region": "South-West Oltenia",
-    "ISO Code": "VL",
+    "ISO Code": "RO-VL",
     "NUTS Code": "RO415",
     "Population": 371714
   },
@@ -331,7 +331,7 @@
     "County": "Vrancea",
     "County Seat": "Foc\u0219ani",
     "Development Region": "South-East",
-    "ISO Code": "VN",
+    "ISO Code": "RO-VN",
     "NUTS Code": "RO226",
     "Population": 340310
   }
