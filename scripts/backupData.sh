@@ -7,7 +7,7 @@
 
 CONTAINER_NAME=jupyter
 
-for d in $(docker exec jupyter find /home/jovyan/work/workspace -name "gas_tmp-*.json" -type f)
+for d in $(docker exec "$CONTAINER_NAME" find /home/jovyan/work/workspace -name "gas_tmp-*.json" -type f)
 do
     name=$(echo "$d" | cut -d/ -f6)
     
@@ -17,7 +17,7 @@ do
         exit 1
     fi
 
-    if ! docker exec jupyter rm "$d"
+    if ! docker exec "$CONTAINER_NAME" rm "$d"
     then
         echo "Failed to delete backed up data: $d; exiting."
         exit 1
