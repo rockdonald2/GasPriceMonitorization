@@ -7,3 +7,5 @@ then
 fi
 
 rm /home/jovyan/work/workspace/createdb.nbconvert.ipynb
+
+echo "Successfully created InfluxDB db at $(date)."
