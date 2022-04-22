@@ -164,7 +164,9 @@
         "justifyMode": "center",
         "orientation": "auto",
         "reduceOptions": {
-          "calcs": ["lastNotNull"],
+          "calcs": [
+            "lastNotNull"
+          ],
           "fields": "",
           "values": true
         },
@@ -179,7 +181,9 @@
           },
           "groupBy": [
             {
-              "params": ["Type"],
+              "params": [
+                "Type"
+              ],
               "type": "tag"
             }
           ],
@@ -191,7 +195,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -328,7 +334,9 @@
           },
           "groupBy": [
             {
-              "params": ["Type"],
+              "params": [
+                "Type"
+              ],
               "type": "tag"
             }
           ],
@@ -343,7 +351,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -351,7 +361,9 @@
                 "type": "mean"
               },
               {
-                "params": ["Átlag"],
+                "params": [
+                  "Átlag"
+                ],
                 "type": "alias"
               }
             ]
@@ -366,7 +378,9 @@
           },
           "groupBy": [
             {
-              "params": ["Type"],
+              "params": [
+                "Type"
+              ],
               "type": "tag"
             }
           ],
@@ -381,7 +395,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -389,7 +405,9 @@
                 "type": "median"
               },
               {
-                "params": ["Medián"],
+                "params": [
+                  "Medián"
+                ],
                 "type": "alias"
               }
             ]
@@ -398,7 +416,7 @@
           "timefrom": "24h"
         }
       ],
-      "title": "📈 Elmúlt periódus átlag és medián üzemanyagárai típusokként",
+      "title": "📈 Típusonként médián és átlagár összehasonlítás",
       "transformations": [
         {
           "id": "seriesToColumns",
@@ -489,7 +507,9 @@
           },
           "groupBy": [
             {
-              "params": ["$interval"],
+              "params": [
+                "$interval"
+              ],
               "type": "time"
             }
           ],
@@ -501,7 +521,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -509,7 +531,9 @@
                 "type": "mean"
               },
               {
-                "params": ["95-ös benzinár"],
+                "params": [
+                  "95-ös benzinár"
+                ],
                 "type": "alias"
               }
             ]
@@ -529,7 +553,9 @@
           },
           "groupBy": [
             {
-              "params": ["$interval"],
+              "params": [
+                "$interval"
+              ],
               "type": "time"
             }
           ],
@@ -542,7 +568,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -550,7 +578,9 @@
                 "type": "mean"
               },
               {
-                "params": ["Gázolajár"],
+                "params": [
+                  "Gázolajár"
+                ],
                 "type": "alias"
               }
             ]
@@ -570,7 +600,9 @@
           },
           "groupBy": [
             {
-              "params": ["$interval"],
+              "params": [
+                "$interval"
+              ],
               "type": "time"
             }
           ],
@@ -583,7 +615,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -591,7 +625,9 @@
                 "type": "mean"
               },
               {
-                "params": ["Prémium benzinár"],
+                "params": [
+                  "Prémium benzinár"
+                ],
                 "type": "alias"
               }
             ]
@@ -611,7 +647,9 @@
           },
           "groupBy": [
             {
-              "params": ["$interval"],
+              "params": [
+                "$interval"
+              ],
               "type": "time"
             }
           ],
@@ -624,7 +662,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -632,7 +672,9 @@
                 "type": "mean"
               },
               {
-                "params": ["Prémium gázolajár"],
+                "params": [
+                  "Prémium gázolajár"
+                ],
                 "type": "alias"
               }
             ]
@@ -646,7 +688,7 @@
           ]
         }
       ],
-      "title": "📈  Elmúlt periódus átlagár-fejlődése",
+      "title": "📈  Elmúlt periódus átlagár-fejlődése típusonként",
       "transparent": true,
       "type": "timeseries"
     },
@@ -675,7 +717,10 @@
             },
             "lineInterpolation": "linear",
             "lineStyle": {
-              "dash": [0, 10],
+              "dash": [
+                0,
+                10
+              ],
               "fill": "dot"
             },
             "lineWidth": 2,
@@ -755,7 +800,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               }
             ]
@@ -797,7 +844,10 @@
             },
             "lineInterpolation": "linear",
             "lineStyle": {
-              "dash": [0, 10],
+              "dash": [
+                0,
+                10
+              ],
               "fill": "dot"
             },
             "lineWidth": 2,
@@ -864,11 +914,15 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
-                "params": ["Ár"],
+                "params": [
+                  "Ár"
+                ],
                 "type": "alias"
               }
             ]
@@ -911,7 +965,10 @@
             },
             "lineInterpolation": "linear",
             "lineStyle": {
-              "dash": [0, 10],
+              "dash": [
+                0,
+                10
+              ],
               "fill": "dot"
             },
             "lineWidth": 2,
@@ -991,7 +1048,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               }
             ]
@@ -1034,7 +1093,10 @@
             },
             "lineInterpolation": "linear",
             "lineStyle": {
-              "dash": [0, 10],
+              "dash": [
+                0,
+                10
+              ],
               "fill": "dot"
             },
             "lineWidth": 2,
@@ -1114,7 +1176,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               }
             ]
@@ -1157,7 +1221,10 @@
             },
             "lineInterpolation": "linear",
             "lineStyle": {
-              "dash": [0, 10],
+              "dash": [
+                0,
+                10
+              ],
               "fill": "dot"
             },
             "lineWidth": 2,
@@ -1237,7 +1304,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               }
             ]
@@ -1280,7 +1349,10 @@
             },
             "lineInterpolation": "linear",
             "lineStyle": {
-              "dash": [0, 10],
+              "dash": [
+                0,
+                10
+              ],
               "fill": "dot"
             },
             "lineWidth": 2,
@@ -1360,7 +1432,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               }
             ]
@@ -1403,11 +1477,15 @@
           },
           "groupBy": [
             {
-              "params": ["ISO"],
+              "params": [
+                "ISO"
+              ],
               "type": "tag"
             },
             {
-              "params": ["County"],
+              "params": [
+                "County"
+              ],
               "type": "tag"
             }
           ],
@@ -1419,7 +1497,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -1466,11 +1546,15 @@
           },
           "groupBy": [
             {
-              "params": ["ISO"],
+              "params": [
+                "ISO"
+              ],
               "type": "tag"
             },
             {
-              "params": ["County"],
+              "params": [
+                "County"
+              ],
               "type": "tag"
             }
           ],
@@ -1482,7 +1566,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -1529,11 +1615,15 @@
           },
           "groupBy": [
             {
-              "params": ["ISO"],
+              "params": [
+                "ISO"
+              ],
               "type": "tag"
             },
             {
-              "params": ["County"],
+              "params": [
+                "County"
+              ],
               "type": "tag"
             }
           ],
@@ -1545,7 +1635,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -1592,11 +1684,15 @@
           },
           "groupBy": [
             {
-              "params": ["ISO"],
+              "params": [
+                "ISO"
+              ],
               "type": "tag"
             },
             {
-              "params": ["County"],
+              "params": [
+                "County"
+              ],
               "type": "tag"
             }
           ],
@@ -1608,7 +1704,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -1655,11 +1753,15 @@
           },
           "groupBy": [
             {
-              "params": ["ISO"],
+              "params": [
+                "ISO"
+              ],
               "type": "tag"
             },
             {
-              "params": ["County"],
+              "params": [
+                "County"
+              ],
               "type": "tag"
             }
           ],
@@ -1671,7 +1773,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -1718,11 +1822,15 @@
           },
           "groupBy": [
             {
-              "params": ["ISO"],
+              "params": [
+                "ISO"
+              ],
               "type": "tag"
             },
             {
-              "params": ["County"],
+              "params": [
+                "County"
+              ],
               "type": "tag"
             }
           ],
@@ -1734,7 +1842,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -1781,11 +1891,15 @@
           },
           "groupBy": [
             {
-              "params": ["ISO"],
+              "params": [
+                "ISO"
+              ],
               "type": "tag"
             },
             {
-              "params": ["County"],
+              "params": [
+                "County"
+              ],
               "type": "tag"
             }
           ],
@@ -1797,7 +1911,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -1844,11 +1960,15 @@
           },
           "groupBy": [
             {
-              "params": ["ISO"],
+              "params": [
+                "ISO"
+              ],
               "type": "tag"
             },
             {
-              "params": ["County"],
+              "params": [
+                "County"
+              ],
               "type": "tag"
             }
           ],
@@ -1860,7 +1980,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -2057,18 +2179,33 @@
                 "value": "Átlagár"
               }
             ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "OMV"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FFF899",
+                  "mode": "fixed"
+                }
+              }
+            ]
           }
         ]
       },
       "gridPos": {
-        "h": 15,
-        "w": 22,
-        "x": 1,
+        "h": 11,
+        "w": 12,
+        "x": 0,
         "y": 107
       },
-      "id": 10,
+      "id": 55,
       "options": {
-        "barRadius": 0.2,
+        "barRadius": 0.1,
         "barWidth": 0.66,
         "colorByField": "Vendor",
         "groupWidth": 0.7,
@@ -2077,7 +2214,7 @@
           "displayMode": "list",
           "placement": "bottom"
         },
-        "orientation": "auto",
+        "orientation": "horizontal",
         "showValue": "always",
         "stacking": "none",
         "tooltip": {
@@ -2097,11 +2234,15 @@
           },
           "groupBy": [
             {
-              "params": ["Vendor"],
+              "params": [
+                "Vendor"
+              ],
               "type": "tag"
             },
             {
-              "params": ["Type"],
+              "params": [
+                "Type"
+              ],
               "type": "tag"
             }
           ],
@@ -2116,7 +2257,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -2125,10 +2268,889 @@
               }
             ]
           ],
-          "tags": []
+          "tags": [
+            {
+              "key": "Type",
+              "operator": "=",
+              "value": "95-ös Benzin"
+            }
+          ]
         }
       ],
-      "title": "📈 Milyen átlagáron árulnak a kereskedők?",
+      "title": "📈 Milyen átlagáron árulnak a kereskedők (95-ös benzin)?",
+      "transformations": [
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": false,
+                "field": "Vendor"
+              }
+            ]
+          }
+        }
+      ],
+      "transparent": true,
+      "type": "barchart"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "_MwRv987k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-BlYlRd"
+          },
+          "custom": {
+            "axisGridShow": true,
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "axisSoftMin": 0,
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            }
+          },
+          "mappings": [
+            {
+              "options": {
+                "BLKOil": {
+                  "color": "dark-blue",
+                  "index": 0
+                },
+                "CellyRo": {
+                  "color": "light-blue",
+                  "index": 1
+                },
+                "Ecombustibil": {
+                  "color": "super-light-blue",
+                  "index": 2
+                },
+                "Fermierul": {
+                  "color": "dark-green",
+                  "index": 3
+                },
+                "Gazprom": {
+                  "color": "green",
+                  "index": 4
+                },
+                "Lukoil": {
+                  "color": "super-light-green",
+                  "index": 5
+                },
+                "MaximCoLtd": {
+                  "color": "dark-yellow",
+                  "index": 6
+                },
+                "Mol": {
+                  "color": "yellow",
+                  "index": 7
+                },
+                "OMV": {
+                  "color": "super-light-yellow",
+                  "index": 8
+                },
+                "Ozana": {
+                  "color": "#FA6400",
+                  "index": 9
+                },
+                "Petrom": {
+                  "color": "orange",
+                  "index": 10
+                },
+                "Petromar": {
+                  "color": "super-light-orange",
+                  "index": 11
+                },
+                "RST": {
+                  "color": "red",
+                  "index": 13
+                },
+                "RoOscar": {
+                  "color": "dark-red",
+                  "index": 12
+                },
+                "Socar": {
+                  "color": "super-light-red",
+                  "index": 14
+                }
+              },
+              "type": "value"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "RON"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Vendor"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "mode": "palette-classic"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Time"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Mérési időpont"
+              },
+              {
+                "id": "custom.hideFrom",
+                "value": {
+                  "legend": false,
+                  "tooltip": true,
+                  "viz": false
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Type"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Üzemanyag típus"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Vendor"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Kereskedő"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "mean"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Átlagár"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "OMV"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FFF899",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 11,
+        "w": 12,
+        "x": 12,
+        "y": 107
+      },
+      "id": 54,
+      "options": {
+        "barRadius": 0.1,
+        "barWidth": 0.66,
+        "colorByField": "Vendor",
+        "groupWidth": 0.7,
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "orientation": "horizontal",
+        "showValue": "always",
+        "stacking": "none",
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        },
+        "xField": "Vendor",
+        "xTickLabelRotation": -60,
+        "xTickLabelSpacing": 0
+      },
+      "pluginVersion": "v1.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "_MwRv987k"
+          },
+          "groupBy": [
+            {
+              "params": [
+                "Vendor"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "Type"
+              ],
+              "type": "tag"
+            }
+          ],
+          "hide": false,
+          "measurement": "GasPrice",
+          "orderByTime": "ASC",
+          "policy": "GasPriceMonitorization",
+          "query": "SELECT mean(\"Price\") FROM \"GasPriceMonitorization\".\"GasPrice\" WHERE $timeFilter GROUP BY \"Vendor\", \"Type\"",
+          "rawQuery": false,
+          "refId": "B",
+          "resultFormat": "table",
+          "select": [
+            [
+              {
+                "params": [
+                  "Price"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "Type",
+              "operator": "=",
+              "value": "Gázolaj"
+            }
+          ]
+        }
+      ],
+      "title": "📈 Milyen átlagáron árulnak a kereskedők (Gázolaj)?",
+      "transformations": [
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": false,
+                "field": "Vendor"
+              }
+            ]
+          }
+        }
+      ],
+      "transparent": true,
+      "type": "barchart"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "_MwRv987k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-BlYlRd"
+          },
+          "custom": {
+            "axisGridShow": true,
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "axisSoftMin": 0,
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            }
+          },
+          "mappings": [
+            {
+              "options": {
+                "BLKOil": {
+                  "color": "dark-blue",
+                  "index": 0
+                },
+                "CellyRo": {
+                  "color": "light-blue",
+                  "index": 1
+                },
+                "Ecombustibil": {
+                  "color": "super-light-blue",
+                  "index": 2
+                },
+                "Fermierul": {
+                  "color": "dark-green",
+                  "index": 3
+                },
+                "Gazprom": {
+                  "color": "green",
+                  "index": 4
+                },
+                "Lukoil": {
+                  "color": "super-light-green",
+                  "index": 5
+                },
+                "MaximCoLtd": {
+                  "color": "dark-yellow",
+                  "index": 6
+                },
+                "Mol": {
+                  "color": "yellow",
+                  "index": 7
+                },
+                "OMV": {
+                  "color": "super-light-yellow",
+                  "index": 8
+                },
+                "Ozana": {
+                  "color": "#FA6400",
+                  "index": 9
+                },
+                "Petrom": {
+                  "color": "orange",
+                  "index": 10
+                },
+                "Petromar": {
+                  "color": "super-light-orange",
+                  "index": 11
+                },
+                "RST": {
+                  "color": "red",
+                  "index": 13
+                },
+                "RoOscar": {
+                  "color": "dark-red",
+                  "index": 12
+                },
+                "Socar": {
+                  "color": "super-light-red",
+                  "index": 14
+                }
+              },
+              "type": "value"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "RON"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Vendor"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "mode": "palette-classic"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Time"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Mérési időpont"
+              },
+              {
+                "id": "custom.hideFrom",
+                "value": {
+                  "legend": false,
+                  "tooltip": true,
+                  "viz": false
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Type"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Üzemanyag típus"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Vendor"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Kereskedő"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "mean"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Átlagár"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "OMV"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FFF899",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 11,
+        "w": 12,
+        "x": 0,
+        "y": 118
+      },
+      "id": 57,
+      "options": {
+        "barRadius": 0.1,
+        "barWidth": 0.66,
+        "colorByField": "Vendor",
+        "groupWidth": 0.7,
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "orientation": "horizontal",
+        "showValue": "always",
+        "stacking": "none",
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        },
+        "xField": "Vendor",
+        "xTickLabelRotation": -60,
+        "xTickLabelSpacing": 0
+      },
+      "pluginVersion": "v1.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "_MwRv987k"
+          },
+          "groupBy": [
+            {
+              "params": [
+                "Vendor"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "Type"
+              ],
+              "type": "tag"
+            }
+          ],
+          "hide": false,
+          "measurement": "GasPrice",
+          "orderByTime": "ASC",
+          "policy": "GasPriceMonitorization",
+          "query": "SELECT mean(\"Price\") FROM \"GasPriceMonitorization\".\"GasPrice\" WHERE $timeFilter GROUP BY \"Vendor\", \"Type\"",
+          "rawQuery": false,
+          "refId": "B",
+          "resultFormat": "table",
+          "select": [
+            [
+              {
+                "params": [
+                  "Price"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "Type",
+              "operator": "=",
+              "value": "Prémium Benzin"
+            }
+          ]
+        }
+      ],
+      "title": "📈 Milyen átlagáron árulnak a kereskedők (Prémium benzin)?",
+      "transformations": [
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": false,
+                "field": "Vendor"
+              }
+            ]
+          }
+        }
+      ],
+      "transparent": true,
+      "type": "barchart"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "_MwRv987k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-BlYlRd"
+          },
+          "custom": {
+            "axisGridShow": true,
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "axisSoftMin": 0,
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            }
+          },
+          "mappings": [
+            {
+              "options": {
+                "BLKOil": {
+                  "color": "dark-blue",
+                  "index": 0
+                },
+                "CellyRo": {
+                  "color": "light-blue",
+                  "index": 1
+                },
+                "Ecombustibil": {
+                  "color": "super-light-blue",
+                  "index": 2
+                },
+                "Fermierul": {
+                  "color": "dark-green",
+                  "index": 3
+                },
+                "Gazprom": {
+                  "color": "green",
+                  "index": 4
+                },
+                "Lukoil": {
+                  "color": "super-light-green",
+                  "index": 5
+                },
+                "MaximCoLtd": {
+                  "color": "dark-yellow",
+                  "index": 6
+                },
+                "Mol": {
+                  "color": "yellow",
+                  "index": 7
+                },
+                "OMV": {
+                  "color": "super-light-yellow",
+                  "index": 8
+                },
+                "Ozana": {
+                  "color": "#FA6400",
+                  "index": 9
+                },
+                "Petrom": {
+                  "color": "orange",
+                  "index": 10
+                },
+                "Petromar": {
+                  "color": "super-light-orange",
+                  "index": 11
+                },
+                "RST": {
+                  "color": "red",
+                  "index": 13
+                },
+                "RoOscar": {
+                  "color": "dark-red",
+                  "index": 12
+                },
+                "Socar": {
+                  "color": "super-light-red",
+                  "index": 14
+                }
+              },
+              "type": "value"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "RON"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Vendor"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "mode": "palette-classic"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Time"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Mérési időpont"
+              },
+              {
+                "id": "custom.hideFrom",
+                "value": {
+                  "legend": false,
+                  "tooltip": true,
+                  "viz": false
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Type"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Üzemanyag típus"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Vendor"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Kereskedő"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "mean"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Átlagár"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "OMV"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#FFF899",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 11,
+        "w": 12,
+        "x": 12,
+        "y": 118
+      },
+      "id": 56,
+      "options": {
+        "barRadius": 0.1,
+        "barWidth": 0.66,
+        "colorByField": "Vendor",
+        "groupWidth": 0.7,
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "orientation": "horizontal",
+        "showValue": "always",
+        "stacking": "none",
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        },
+        "xField": "Vendor",
+        "xTickLabelRotation": -60,
+        "xTickLabelSpacing": 0
+      },
+      "pluginVersion": "v1.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "_MwRv987k"
+          },
+          "groupBy": [
+            {
+              "params": [
+                "Vendor"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "Type"
+              ],
+              "type": "tag"
+            }
+          ],
+          "hide": false,
+          "measurement": "GasPrice",
+          "orderByTime": "ASC",
+          "policy": "GasPriceMonitorization",
+          "query": "SELECT mean(\"Price\") FROM \"GasPriceMonitorization\".\"GasPrice\" WHERE $timeFilter GROUP BY \"Vendor\", \"Type\"",
+          "rawQuery": false,
+          "refId": "B",
+          "resultFormat": "table",
+          "select": [
+            [
+              {
+                "params": [
+                  "Price"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "Type",
+              "operator": "=",
+              "value": "Prémium Gázolaj"
+            }
+          ]
+        }
+      ],
+      "title": "📈 Milyen átlagáron árulnak a kereskedők (Prémium gázolaj)?",
       "transformations": [
         {
           "id": "sortBy",
@@ -2159,17 +3181,32 @@
           "custom": {
             "axisLabel": "",
             "axisPlacement": "auto",
-            "axisSoftMin": 0,
-            "fillOpacity": 80,
-            "gradientMode": "none",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 2,
+            "gradientMode": "opacity",
             "hideFrom": {
               "legend": false,
               "tooltip": false,
               "viz": false
             },
-            "lineWidth": 1,
+            "lineInterpolation": "linear",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 2,
+            "pointSize": 5,
             "scaleDistribution": {
               "type": "linear"
+            },
+            "showPoints": "always",
+            "spanNulls": true,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
             }
           },
           "mappings": [],
@@ -2181,126 +3218,101 @@
                 "value": null
               }
             ]
-          }
+          },
+          "unit": "RON"
         },
         "overrides": [
           {
             "matcher": {
               "id": "byName",
-              "options": "GasPrice.Price {Type: 95-ös Benzin}"
+              "options": "GasPrice.Átlagár {Vendor: Gazprom}"
             },
             "properties": [
               {
                 "id": "displayName",
-                "value": "95-ös Benzin"
+                "value": "Gazprom"
               }
             ]
           },
           {
             "matcher": {
               "id": "byName",
-              "options": "GasPrice.Price {Type: AdBlue}"
+              "options": "GasPrice.Átlagár {Vendor: Lukoil}"
             },
             "properties": [
               {
                 "id": "displayName",
-                "value": "AdBlue"
+                "value": "Lukoil"
               }
             ]
           },
           {
             "matcher": {
               "id": "byName",
-              "options": "GasPrice.Price {Type: Gázolaj}"
+              "options": "GasPrice.Átlagár {Vendor: Mol}"
             },
             "properties": [
               {
                 "id": "displayName",
-                "value": "Gázolaj"
+                "value": "Mol"
               }
             ]
           },
           {
             "matcher": {
               "id": "byName",
-              "options": "GasPrice.Price {Type: LPG}"
+              "options": "GasPrice.Átlagár {Vendor: OMV}"
             },
             "properties": [
               {
                 "id": "displayName",
-                "value": "LPG"
+                "value": "OMV"
               }
             ]
           },
           {
             "matcher": {
               "id": "byName",
-              "options": "GasPrice.Price {Type: Prémium Benzin}"
+              "options": "GasPrice.Átlagár {Vendor: Petrom}"
             },
             "properties": [
               {
                 "id": "displayName",
-                "value": "Prémium Benzin"
+                "value": "Petrom"
               }
             ]
           },
           {
             "matcher": {
               "id": "byName",
-              "options": "GasPrice.Price {Type: Prémium Gázolaj}"
+              "options": "GasPrice.Átlagár {Vendor: Rompetrol}"
             },
             "properties": [
               {
                 "id": "displayName",
-                "value": "Prémium Gázolaj"
-              }
-            ]
-          },
-          {
-            "matcher": {
-              "id": "byName",
-              "options": "Time"
-            },
-            "properties": [
-              {
-                "id": "custom.hideFrom",
-                "value": {
-                  "legend": false,
-                  "tooltip": true,
-                  "viz": false
-                }
+                "value": "Rompetrol"
               }
             ]
           }
         ]
       },
       "gridPos": {
-        "h": 14,
-        "w": 22,
-        "x": 1,
-        "y": 122
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 129
       },
-      "id": 12,
+      "id": 59,
       "options": {
-        "barRadius": 0.2,
-        "barWidth": 0.9,
-        "groupWidth": 0.7,
         "legend": {
           "calcs": [],
           "displayMode": "list",
           "placement": "bottom"
         },
-        "orientation": "auto",
-        "showValue": "always",
-        "stacking": "none",
-        "text": {},
         "tooltip": {
           "mode": "multi",
           "sort": "none"
-        },
-        "xField": "Time",
-        "xTickLabelRotation": 0,
-        "xTickLabelSpacing": 0
+        }
       },
       "targets": [
         {
@@ -2310,29 +3322,819 @@
           },
           "groupBy": [
             {
-              "params": ["Type"],
+              "params": [
+                "$interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "Vendor"
+              ],
               "type": "tag"
             }
           ],
           "measurement": "GasPrice",
           "orderByTime": "ASC",
           "policy": "GasPriceMonitorization",
+          "query": "SELECT mean(\"Price\") AS \"Átlagár\" FROM \"GasPriceMonitorization\".\"GasPrice\" WHERE (\"Vendor\" = 'OMV' OR \"Vendor\" = 'Gazprom' OR \"Vendor\" = 'Lukoil' OR \"Vendor\" = 'Mol' OR \"Vendor\" = 'Petrom' OR \"Vendor\" = 'Rompetrol') AND \"Type\" = '95-ös Benzin' AND $timeFilter GROUP BY time($interval), \"Vendor\"",
+          "rawQuery": true,
           "refId": "A",
           "resultFormat": "time_series",
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              },
+              {
+                "params": [
+                  "Átlagár"
+                ],
+                "type": "alias"
               }
             ]
           ],
-          "tags": []
+          "tags": [
+            {
+              "key": "Vendor",
+              "operator": "=",
+              "value": "OMV"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Gazprom"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Lukoil"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Mol"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Petrom"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Rompetrol"
+            },
+            {
+              "condition": "AND",
+              "key": "Type",
+              "operator": "=",
+              "value": "95-ös Benzin"
+            }
+          ]
         }
       ],
-      "title": "📈  Elmúlt napok átlagárai típusonként",
+      "title": "📈 Legnagyobb kereskedők átlagárfejlődése (95-ös benzin)",
       "transparent": true,
-      "type": "barchart"
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "_MwRv987k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 2,
+            "gradientMode": "opacity",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 2,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "always",
+            "spanNulls": true,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "RON"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: Gazprom}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Gazprom"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: Lukoil}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Lukoil"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: Mol}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Mol"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: OMV}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "OMV"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: Petrom}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Petrom"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: Rompetrol}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Rompetrol"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 129
+      },
+      "id": 60,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "_MwRv987k"
+          },
+          "groupBy": [
+            {
+              "params": [
+                "$interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "Vendor"
+              ],
+              "type": "tag"
+            }
+          ],
+          "measurement": "GasPrice",
+          "orderByTime": "ASC",
+          "policy": "GasPriceMonitorization",
+          "query": "SELECT mean(\"Price\") AS \"Átlagár\" FROM \"GasPriceMonitorization\".\"GasPrice\" WHERE (\"Vendor\" = 'OMV' OR \"Vendor\" = 'Gazprom' OR \"Vendor\" = 'Lukoil' OR \"Vendor\" = 'Mol' OR \"Vendor\" = 'Petrom' OR \"Vendor\" = 'Rompetrol') AND \"Type\" = 'Gázolaj' AND $timeFilter GROUP BY time($interval), \"Vendor\"",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Price"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              },
+              {
+                "params": [
+                  "Átlagár"
+                ],
+                "type": "alias"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "Vendor",
+              "operator": "=",
+              "value": "OMV"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Gazprom"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Lukoil"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Mol"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Petrom"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Rompetrol"
+            },
+            {
+              "condition": "AND",
+              "key": "Type",
+              "operator": "=",
+              "value": "95-ös Benzin"
+            }
+          ]
+        }
+      ],
+      "title": "📈 Legnagyobb kereskedők átlagárfejlődése (Gázolaj)",
+      "transparent": true,
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "_MwRv987k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 2,
+            "gradientMode": "opacity",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 2,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "always",
+            "spanNulls": true,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "RON"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: Gazprom}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Gazprom"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: Lukoil}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Lukoil"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: Mol}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Mol"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: OMV}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "OMV"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: Petrom}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Petrom"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: Rompetrol}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Rompetrol"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 138
+      },
+      "id": 61,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "_MwRv987k"
+          },
+          "groupBy": [
+            {
+              "params": [
+                "$interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "Vendor"
+              ],
+              "type": "tag"
+            }
+          ],
+          "measurement": "GasPrice",
+          "orderByTime": "ASC",
+          "policy": "GasPriceMonitorization",
+          "query": "SELECT mean(\"Price\") AS \"Átlagár\" FROM \"GasPriceMonitorization\".\"GasPrice\" WHERE (\"Vendor\" = 'OMV' OR \"Vendor\" = 'Gazprom' OR \"Vendor\" = 'Lukoil' OR \"Vendor\" = 'Mol' OR \"Vendor\" = 'Petrom' OR \"Vendor\" = 'Rompetrol') AND \"Type\" = 'Prémium Gázolaj' AND $timeFilter GROUP BY time($interval), \"Vendor\"",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Price"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              },
+              {
+                "params": [
+                  "Átlagár"
+                ],
+                "type": "alias"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "Vendor",
+              "operator": "=",
+              "value": "OMV"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Gazprom"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Lukoil"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Mol"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Petrom"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Rompetrol"
+            },
+            {
+              "condition": "AND",
+              "key": "Type",
+              "operator": "=",
+              "value": "95-ös Benzin"
+            }
+          ]
+        }
+      ],
+      "title": "📈 Legnagyobb kereskedők átlagárfejlődése (Prémium gázolaj)",
+      "transparent": true,
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "_MwRv987k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 2,
+            "gradientMode": "opacity",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 2,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "always",
+            "spanNulls": true,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "RON"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: Gazprom}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Gazprom"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: Lukoil}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Lukoil"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: Mol}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Mol"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: OMV}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "OMV"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: Petrom}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Petrom"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: Rompetrol}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Rompetrol"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 138
+      },
+      "id": 62,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "_MwRv987k"
+          },
+          "groupBy": [
+            {
+              "params": [
+                "$interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "Vendor"
+              ],
+              "type": "tag"
+            }
+          ],
+          "measurement": "GasPrice",
+          "orderByTime": "ASC",
+          "policy": "GasPriceMonitorization",
+          "query": "SELECT mean(\"Price\") AS \"Átlagár\" FROM \"GasPriceMonitorization\".\"GasPrice\" WHERE (\"Vendor\" = 'OMV' OR \"Vendor\" = 'Gazprom' OR \"Vendor\" = 'Lukoil' OR \"Vendor\" = 'Mol' OR \"Vendor\" = 'Petrom' OR \"Vendor\" = 'Rompetrol') AND \"Type\" = 'Prémium Benzin' AND $timeFilter GROUP BY time($interval), \"Vendor\"",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Price"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              },
+              {
+                "params": [
+                  "Átlagár"
+                ],
+                "type": "alias"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "Vendor",
+              "operator": "=",
+              "value": "OMV"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Gazprom"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Lukoil"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Mol"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Petrom"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Rompetrol"
+            },
+            {
+              "condition": "AND",
+              "key": "Type",
+              "operator": "=",
+              "value": "95-ös Benzin"
+            }
+          ]
+        }
+      ],
+      "title": "📈 Legnagyobb kereskedők átlagárfejlődése (Prémium benzin)",
+      "transparent": true,
+      "type": "timeseries"
     },
     {
       "collapsed": false,
@@ -2340,7 +4142,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 136
+        "y": 147
       },
       "id": 47,
       "panels": [],
@@ -2410,7 +4212,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 137
+        "y": 148
       },
       "id": 32,
       "options": {
@@ -2432,7 +4234,9 @@
           },
           "groupBy": [
             {
-              "params": ["$interval"],
+              "params": [
+                "$interval"
+              ],
               "type": "time"
             }
           ],
@@ -2444,7 +4248,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -2452,7 +4258,9 @@
                 "type": "stddev"
               },
               {
-                "params": ["Átlagtól való eltérés"],
+                "params": [
+                  "Átlagtól való eltérés"
+                ],
                 "type": "alias"
               }
             ]
@@ -2533,7 +4341,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 137
+        "y": 148
       },
       "id": 50,
       "options": {
@@ -2555,7 +4363,9 @@
           },
           "groupBy": [
             {
-              "params": ["$interval"],
+              "params": [
+                "$interval"
+              ],
               "type": "time"
             }
           ],
@@ -2567,7 +4377,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -2575,7 +4387,9 @@
                 "type": "spread"
               },
               {
-                "params": ["Terjedelem"],
+                "params": [
+                  "Terjedelem"
+                ],
                 "type": "alias"
               }
             ]
@@ -2656,7 +4470,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 145
+        "y": 156
       },
       "id": 33,
       "options": {
@@ -2678,7 +4492,9 @@
           },
           "groupBy": [
             {
-              "params": ["$interval"],
+              "params": [
+                "$interval"
+              ],
               "type": "time"
             }
           ],
@@ -2690,7 +4506,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -2698,7 +4516,9 @@
                 "type": "stddev"
               },
               {
-                "params": ["Átlagtól való eltérés"],
+                "params": [
+                  "Átlagtól való eltérés"
+                ],
                 "type": "alias"
               }
             ]
@@ -2779,7 +4599,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 145
+        "y": 156
       },
       "id": 51,
       "options": {
@@ -2801,7 +4621,9 @@
           },
           "groupBy": [
             {
-              "params": ["$interval"],
+              "params": [
+                "$interval"
+              ],
               "type": "time"
             }
           ],
@@ -2813,7 +4635,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -2821,7 +4645,9 @@
                 "type": "spread"
               },
               {
-                "params": ["Terjedelem"],
+                "params": [
+                  "Terjedelem"
+                ],
                 "type": "alias"
               }
             ]
@@ -2902,7 +4728,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 153
+        "y": 164
       },
       "id": 35,
       "options": {
@@ -2924,7 +4750,9 @@
           },
           "groupBy": [
             {
-              "params": ["$interval"],
+              "params": [
+                "$interval"
+              ],
               "type": "time"
             }
           ],
@@ -2936,7 +4764,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -2944,7 +4774,9 @@
                 "type": "stddev"
               },
               {
-                "params": ["Átlagtól való eltérés"],
+                "params": [
+                  "Átlagtól való eltérés"
+                ],
                 "type": "alias"
               }
             ]
@@ -3025,7 +4857,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 153
+        "y": 164
       },
       "id": 52,
       "options": {
@@ -3047,7 +4879,9 @@
           },
           "groupBy": [
             {
-              "params": ["$interval"],
+              "params": [
+                "$interval"
+              ],
               "type": "time"
             }
           ],
@@ -3059,7 +4893,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -3067,7 +4903,9 @@
                 "type": "spread"
               },
               {
-                "params": ["Terjedelem"],
+                "params": [
+                  "Terjedelem"
+                ],
                 "type": "alias"
               }
             ]
@@ -3148,7 +4986,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 161
+        "y": 172
       },
       "id": 34,
       "options": {
@@ -3170,7 +5008,9 @@
           },
           "groupBy": [
             {
-              "params": ["$interval"],
+              "params": [
+                "$interval"
+              ],
               "type": "time"
             }
           ],
@@ -3182,7 +5022,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -3190,7 +5032,9 @@
                 "type": "stddev"
               },
               {
-                "params": ["Átlagtól való eltérés"],
+                "params": [
+                  "Átlagtól való eltérés"
+                ],
                 "type": "alias"
               }
             ]
@@ -3271,7 +5115,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 161
+        "y": 172
       },
       "id": 53,
       "options": {
@@ -3293,7 +5137,9 @@
           },
           "groupBy": [
             {
-              "params": ["$interval"],
+              "params": [
+                "$interval"
+              ],
               "type": "time"
             }
           ],
@@ -3305,7 +5151,9 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
@@ -3313,7 +5161,9 @@
                 "type": "spread"
               },
               {
-                "params": ["Terjedelem"],
+                "params": [
+                  "Terjedelem"
+                ],
                 "type": "alias"
               }
             ]
@@ -3337,7 +5187,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 169
+        "y": 180
       },
       "id": 49,
       "panels": [],
@@ -3428,14 +5278,16 @@
         "h": 16,
         "w": 24,
         "x": 0,
-        "y": 170
+        "y": 181
       },
       "id": 43,
       "options": {
         "footer": {
           "enablePagination": true,
           "fields": "",
-          "reducer": ["sum"],
+          "reducer": [
+            "sum"
+          ],
           "show": false
         },
         "showHeader": true
@@ -3449,19 +5301,27 @@
           },
           "groupBy": [
             {
-              "params": ["Type"],
+              "params": [
+                "Type"
+              ],
               "type": "tag"
             },
             {
-              "params": ["County"],
+              "params": [
+                "County"
+              ],
               "type": "tag"
             },
             {
-              "params": ["City"],
+              "params": [
+                "City"
+              ],
               "type": "tag"
             },
             {
-              "params": ["Vendor"],
+              "params": [
+                "Vendor"
+              ],
               "type": "tag"
             }
           ],
@@ -3473,11 +5333,15 @@
           "select": [
             [
               {
-                "params": ["Price"],
+                "params": [
+                  "Price"
+                ],
                 "type": "field"
               },
               {
-                "params": ["Ár"],
+                "params": [
+                  "Ár"
+                ],
                 "type": "alias"
               }
             ]
@@ -3498,7 +5362,7 @@
     "list": []
   },
   "time": {
-    "from": "now-7d",
+    "from": "now-2d",
     "to": "now"
   },
   "timepicker": {
@@ -3519,6 +5383,6 @@
   "timezone": "",
   "title": "Gas Price Monitorization",
   "uid": "TfYiDrUnz",
-  "version": 101,
+  "version": 104,
   "weekStart": ""
 }
