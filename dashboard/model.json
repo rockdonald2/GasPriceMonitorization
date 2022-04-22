@@ -137,6 +137,10 @@
       },
       "fieldConfig": {
         "defaults": {
+          "color": {
+            "fixedColor": "yellow",
+            "mode": "fixed"
+          },
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
@@ -5383,6 +5387,6 @@
   "timezone": "",
   "title": "Gas Price Monitorization",
   "uid": "TfYiDrUnz",
-  "version": 104,
+  "version": 105,
   "weekStart": ""
 }

@@ -7,7 +7,7 @@
 
 CONTAINER_NAME=jupyter
 
-for d in $(docker exec "$CONTAINER_NAME" find /home/jovyan/work/workspace -name "gas_tmp-*.json" -type f)
+for d in $(docker exec "$CONTAINER_NAME" find /home/jovyan/work/workspace -maxdepth 1 -name "gas_tmp-*.json" -type f)
 do
     name=$(echo "$d" | cut -d/ -f6)
     
