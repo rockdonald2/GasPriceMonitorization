@@ -2,28 +2,24 @@
 
 while true
 do
-    echo "Scraping GasPrice data at $(date)..."
+    echo "Scraping GasPrice data at $(date)..." >> /home/jovyan/work/workspace/log
 
-    jupyter nbconvert --execute /home/jovyan/work/workspace/scrape.ipynb --to notebook --ExecutePreprocessor.timeout=-1
-
-    if [[ $? -ne 0 ]]
+    if ! jupyter nbconvert --execute /home/jovyan/work/workspace/scrape.ipynb --to notebook --ExecutePreprocessor.timeout=-1
     then
-        echo 'Failed to execute scrape notebook.'
+        echo 'Failed to execute scrape notebook.' >> /home/jovyan/work/workspace/error
         exit 1
     fi
 
-    jupyter nbconvert --execute /home/jovyan/work/workspace/upload.ipynb --to notebook --ExecutePreprocessor.timeout=-1
-
-    if [[ $? -ne 0 ]]
+    if ! jupyter nbconvert --execute /home/jovyan/work/workspace/upload.ipynb --to notebook --ExecutePreprocessor.timeout=-1
     then
-        echo 'Failed to execute upload notebook.'
+        echo 'Failed to execute upload notebook.' >> /home/jovyan/work/workspace/error
         exit 1
     fi
 
     rm /home/jovyan/work/workspace/scrape.nbconvert.ipynb /home/jovyan/work/workspace/upload.nbconvert.ipynb
 
-    echo "Finished scraping GasPrice data at $(date)."
+    echo "Finished scraping GasPrice data at $(date)." >> /home/jovyan/work/workspace/log
 
-    echo "Next scrape for GasPrice in a day."
+    echo "Next scrape for GasPrice in a day." >> /home/jovyan/work/workspace/log
     sleep 1d
 done
