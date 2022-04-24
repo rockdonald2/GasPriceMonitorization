@@ -25,13 +25,13 @@ fi
 
 JUPYTER_CONTAINER=jupyter
 
-if ! docker exec "$JUPYTER_CONTAINER" bash /home/jovyan/work/workspace/createdb.sh
+if ! docker exec -d "$JUPYTER_CONTAINER" bash /home/jovyan/work/workspace/createdb.sh
 then
-    echo "Failed to start auto-pull scrape script."
+    echo "Failed to start createdb script."
     exit 1
 fi
 
-if ! docker exec "$JUPYTER_CONTAINER" setsid /home/jovyan/work/workspace/scrape.sh
+if ! docker exec -d "$JUPYTER_CONTAINER" bash /home/jovyan/work/workspace/scrape.sh
 then
     echo "Failed to start auto-pull scrape script."
     exit 1
