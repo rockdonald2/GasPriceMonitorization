@@ -36,14 +36,33 @@
       },
       "gridPos": {
         "h": 2,
-        "w": 8,
-        "x": 3,
+        "w": 12,
+        "x": 0,
         "y": 0
       },
       "id": 4,
       "options": {
         "content": "# 🚗 Üzemanyagárak Romániában 🇷🇴",
         "mode": "markdown"
+      },
+      "pluginVersion": "v1.0",
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "_MwRv987k"
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 7,
+        "x": 12,
+        "y": 0
+      },
+      "id": 64,
+      "options": {
+        "content": "\r\n\r\n<table style=\"width:100%; height:100%;border:0px solid black;\">\r\n     <td style=\"text-align: center;vertical-align: middle;border:0px solid black; \">\r\n       <img align=\"center\" src=\"https://econ.ubbcluj.ro/galerie_foto/poze/logo-FSEGA-new-white-01.png\" />\r\n     </td>\r\n</table>",
+        "mode": "html"
       },
       "pluginVersion": "v1.0",
       "transparent": true,
@@ -55,26 +74,26 @@
         "uid": "_MwRv987k"
       },
       "gridPos": {
-        "h": 6,
-        "w": 12,
-        "x": 12,
+        "h": 8,
+        "w": 5,
+        "x": 19,
         "y": 0
       },
       "id": 6,
       "options": {
-        "bgColor": "transparent",
+        "bgColor": "#b877d900",
         "clockType": "24 hour",
         "countdownSettings": {
-          "endCountdownTime": "2022-04-17T02:02:17+03:00",
+          "endCountdownTime": "2022-04-24T19:50:37+03:00",
           "endText": "00:00:00"
         },
         "countupSettings": {
-          "beginCountupTime": "2022-04-17T02:02:17+03:00",
+          "beginCountupTime": "2022-04-24T19:50:37+03:00",
           "beginText": "00:00:00"
         },
         "dateSettings": {
           "dateFormat": "YYYY-MM-DD",
-          "fontSize": "20px",
+          "fontSize": "34px",
           "fontWeight": "normal",
           "locale": "",
           "showDate": true
@@ -82,7 +101,7 @@
         "mode": "time",
         "refresh": "sec",
         "timeSettings": {
-          "fontSize": "64px",
+          "fontSize": "56px",
           "fontWeight": "bold"
         },
         "timezone": "",
@@ -103,18 +122,17 @@
         "uid": "_MwRv987k"
       },
       "gridPos": {
-        "h": 4,
-        "w": 8,
-        "x": 3,
+        "h": 6,
+        "w": 12,
+        "x": 0,
         "y": 2
       },
       "id": 18,
       "options": {
-        "content": "### Naponta frissülő romániai üzemanyagár figyelő, monitorizáló és vizualizáló dashboard, amelynek célja, hogy átfogó képet nyújtson az üzemanyagpiacról.\r\n",
+        "content": "### Naponta frissülő romániai üzemanyagár figyelő, monitorizáló és vizualizáló dashboard, amelynek célja, hogy átfogó képet nyújtson a romániai üzemanyagpiacról.\r\n\r\n---\r\n\r\nAz adatok top-down megközelítésben közli: először romániai szinten, majd megyei, végül kereskedőin.\r\n\r\n_Az adatok naponta (általában 19.30-kor) kerülnek frissítésre a [peco-online.ro](https://www.peco-online.ro/) adatbázisából._  \r\n_A dashboard-ot működtető kód elérhető a [GasPriceMonitorization](https://github.com/rockdonald2/GasPriceMonitorization) GitHub repo-n._  \r\n\r\n2022 | Lukács Zsolt: [elérhetőség](https://www.linkedin.com/in/zsolt-lukacs/)",
         "mode": "markdown"
       },
       "pluginVersion": "v1.0",
-      "transparent": true,
       "type": "text"
     },
     {
@@ -123,7 +141,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 6
+        "y": 8
       },
       "id": 45,
       "panels": [],
@@ -135,6 +153,7 @@
         "type": "influxdb",
         "uid": "_MwRv987k"
       },
+      "description": "Kiválasztott perióudus országos átlagárai.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -159,7 +178,7 @@
         "h": 8,
         "w": 24,
         "x": 0,
-        "y": 7
+        "y": 9
       },
       "id": 41,
       "options": {
@@ -214,7 +233,6 @@
         }
       ],
       "title": "📊 Elmúlt periódus átlagárai típusonként",
-      "transparent": true,
       "type": "stat"
     },
     {
@@ -222,6 +240,7 @@
         "type": "influxdb",
         "uid": "_MwRv987k"
       },
+      "description": "Medián és átlagár összehasonlítás romániai szinten.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -304,7 +323,7 @@
         "h": 13,
         "w": 12,
         "x": 0,
-        "y": 15
+        "y": 17
       },
       "id": 2,
       "options": {
@@ -429,7 +448,6 @@
           }
         }
       ],
-      "transparent": true,
       "type": "barchart"
     },
     {
@@ -437,6 +455,7 @@
         "type": "influxdb",
         "uid": "_MwRv987k"
       },
+      "description": "Kiválasztott perióudus országos átlagár változásai.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -447,8 +466,8 @@
             "axisPlacement": "auto",
             "barAlignment": 0,
             "drawStyle": "line",
-            "fillOpacity": 4,
-            "gradientMode": "none",
+            "fillOpacity": 2,
+            "gradientMode": "opacity",
             "hideFrom": {
               "legend": false,
               "tooltip": false,
@@ -488,7 +507,7 @@
         "h": 13,
         "w": 12,
         "x": 12,
-        "y": 15
+        "y": 17
       },
       "id": 8,
       "options": {
@@ -693,7 +712,6 @@
         }
       ],
       "title": "📈  Elmúlt periódus átlagár-fejlődése típusonként",
-      "transparent": true,
       "type": "timeseries"
     },
     {
@@ -773,7 +791,7 @@
         "h": 9,
         "w": 8,
         "x": 0,
-        "y": 28
+        "y": 30
       },
       "id": 25,
       "options": {
@@ -821,7 +839,6 @@
         }
       ],
       "title": "📈 Elmúlt periódus benzinárai",
-      "transparent": true,
       "type": "timeseries"
     },
     {
@@ -886,7 +903,7 @@
         "h": 9,
         "w": 8,
         "x": 8,
-        "y": 28
+        "y": 30
       },
       "id": 26,
       "options": {
@@ -941,7 +958,6 @@
         }
       ],
       "title": "📈 Elmúlt periódus gázolajárai",
-      "transparent": true,
       "type": "timeseries"
     },
     {
@@ -1021,7 +1037,7 @@
         "h": 9,
         "w": 8,
         "x": 16,
-        "y": 28
+        "y": 30
       },
       "id": 27,
       "options": {
@@ -1069,7 +1085,6 @@
         }
       ],
       "title": "📈 Elmúlt periódus prémium benzinárai",
-      "transparent": true,
       "type": "timeseries"
     },
     {
@@ -1149,7 +1164,7 @@
         "h": 9,
         "w": 8,
         "x": 0,
-        "y": 37
+        "y": 39
       },
       "id": 28,
       "options": {
@@ -1197,7 +1212,6 @@
         }
       ],
       "title": "📈 Elmúlt periódus prémium gázolajárai",
-      "transparent": true,
       "type": "timeseries"
     },
     {
@@ -1277,7 +1291,7 @@
         "h": 9,
         "w": 8,
         "x": 8,
-        "y": 37
+        "y": 39
       },
       "id": 29,
       "options": {
@@ -1325,7 +1339,6 @@
         }
       ],
       "title": "📈 Elmúlt periódus AdBlue árai",
-      "transparent": true,
       "type": "timeseries"
     },
     {
@@ -1405,7 +1418,7 @@
         "h": 9,
         "w": 8,
         "x": 16,
-        "y": 37
+        "y": 39
       },
       "id": 30,
       "options": {
@@ -1453,7 +1466,6 @@
         }
       ],
       "title": "📈 Elmúlt periódus LPG árai",
-      "transparent": true,
       "type": "timeseries"
     },
     {
@@ -1465,7 +1477,7 @@
         "h": 15,
         "w": 10,
         "x": 2,
-        "y": 46
+        "y": 48
       },
       "id": 36,
       "options": {
@@ -1534,7 +1546,7 @@
         "h": 15,
         "w": 10,
         "x": 12,
-        "y": 46
+        "y": 48
       },
       "id": 37,
       "options": {
@@ -1603,7 +1615,7 @@
         "h": 16,
         "w": 10,
         "x": 2,
-        "y": 61
+        "y": 63
       },
       "id": 39,
       "options": {
@@ -1672,7 +1684,7 @@
         "h": 16,
         "w": 10,
         "x": 12,
-        "y": 61
+        "y": 63
       },
       "id": 38,
       "options": {
@@ -1741,7 +1753,7 @@
         "h": 15,
         "w": 10,
         "x": 2,
-        "y": 77
+        "y": 79
       },
       "id": 16,
       "options": {
@@ -1810,7 +1822,7 @@
         "h": 15,
         "w": 10,
         "x": 12,
-        "y": 77
+        "y": 79
       },
       "id": 19,
       "options": {
@@ -1879,7 +1891,7 @@
         "h": 15,
         "w": 10,
         "x": 2,
-        "y": 92
+        "y": 94
       },
       "id": 20,
       "options": {
@@ -1948,7 +1960,7 @@
         "h": 15,
         "w": 10,
         "x": 12,
-        "y": 92
+        "y": 94
       },
       "id": 21,
       "options": {
@@ -2205,7 +2217,7 @@
         "h": 11,
         "w": 12,
         "x": 0,
-        "y": 107
+        "y": 109
       },
       "id": 55,
       "options": {
@@ -2296,7 +2308,6 @@
           }
         }
       ],
-      "transparent": true,
       "type": "barchart"
     },
     {
@@ -2496,7 +2507,7 @@
         "h": 11,
         "w": 12,
         "x": 12,
-        "y": 107
+        "y": 109
       },
       "id": 54,
       "options": {
@@ -2587,7 +2598,6 @@
           }
         }
       ],
-      "transparent": true,
       "type": "barchart"
     },
     {
@@ -2787,7 +2797,7 @@
         "h": 11,
         "w": 12,
         "x": 0,
-        "y": 118
+        "y": 120
       },
       "id": 57,
       "options": {
@@ -2878,7 +2888,6 @@
           }
         }
       ],
-      "transparent": true,
       "type": "barchart"
     },
     {
@@ -3078,7 +3087,7 @@
         "h": 11,
         "w": 12,
         "x": 12,
-        "y": 118
+        "y": 120
       },
       "id": 56,
       "options": {
@@ -3169,7 +3178,6 @@
           }
         }
       ],
-      "transparent": true,
       "type": "barchart"
     },
     {
@@ -3177,6 +3185,7 @@
         "type": "influxdb",
         "uid": "_MwRv987k"
       },
+      "description": "Kiválasztott legnagyobb/legnépszerűbb üzemanyagkereskedők kiválasztott periódusra vetített árváltozása a benzin értékesítésében.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -3199,7 +3208,7 @@
               "fill": "solid"
             },
             "lineWidth": 2,
-            "pointSize": 5,
+            "pointSize": 12,
             "scaleDistribution": {
               "type": "linear"
             },
@@ -3304,7 +3313,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 129
+        "y": 131
       },
       "id": 59,
       "options": {
@@ -3411,7 +3420,6 @@
         }
       ],
       "title": "📈 Legnagyobb kereskedők átlagárfejlődése (95-ös benzin)",
-      "transparent": true,
       "type": "timeseries"
     },
     {
@@ -3419,6 +3427,7 @@
         "type": "influxdb",
         "uid": "_MwRv987k"
       },
+      "description": "Kiválasztott legnagyobb/legnépszerűbb üzemanyagkereskedők kiválasztott periódusra vetített árváltozása a gázolaj értékesítésében.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -3441,7 +3450,7 @@
               "fill": "solid"
             },
             "lineWidth": 2,
-            "pointSize": 5,
+            "pointSize": 12,
             "scaleDistribution": {
               "type": "linear"
             },
@@ -3546,7 +3555,7 @@
         "h": 9,
         "w": 12,
         "x": 12,
-        "y": 129
+        "y": 131
       },
       "id": 60,
       "options": {
@@ -3653,7 +3662,6 @@
         }
       ],
       "title": "📈 Legnagyobb kereskedők átlagárfejlődése (Gázolaj)",
-      "transparent": true,
       "type": "timeseries"
     },
     {
@@ -3661,6 +3669,7 @@
         "type": "influxdb",
         "uid": "_MwRv987k"
       },
+      "description": "Kiválasztott legnagyobb/legnépszerűbb üzemanyagkereskedők kiválasztott periódusra vetített árváltozása a prémium benzin értékesítésében.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -3683,7 +3692,7 @@
               "fill": "solid"
             },
             "lineWidth": 2,
-            "pointSize": 5,
+            "pointSize": 12,
             "scaleDistribution": {
               "type": "linear"
             },
@@ -3788,249 +3797,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 138
-      },
-      "id": 61,
-      "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom"
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "none"
-        }
-      },
-      "targets": [
-        {
-          "datasource": {
-            "type": "influxdb",
-            "uid": "_MwRv987k"
-          },
-          "groupBy": [
-            {
-              "params": [
-                "$interval"
-              ],
-              "type": "time"
-            },
-            {
-              "params": [
-                "Vendor"
-              ],
-              "type": "tag"
-            }
-          ],
-          "measurement": "GasPrice",
-          "orderByTime": "ASC",
-          "policy": "GasPriceMonitorization",
-          "query": "SELECT mean(\"Price\") AS \"Átlagár\" FROM \"GasPriceMonitorization\".\"GasPrice\" WHERE (\"Vendor\" = 'OMV' OR \"Vendor\" = 'Gazprom' OR \"Vendor\" = 'Lukoil' OR \"Vendor\" = 'Mol' OR \"Vendor\" = 'Petrom' OR \"Vendor\" = 'Rompetrol') AND \"Type\" = 'Prémium Gázolaj' AND $timeFilter GROUP BY time($interval), \"Vendor\"",
-          "rawQuery": true,
-          "refId": "A",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "Price"
-                ],
-                "type": "field"
-              },
-              {
-                "params": [],
-                "type": "mean"
-              },
-              {
-                "params": [
-                  "Átlagár"
-                ],
-                "type": "alias"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "Vendor",
-              "operator": "=",
-              "value": "OMV"
-            },
-            {
-              "condition": "OR",
-              "key": "Vendor",
-              "operator": "=",
-              "value": "Gazprom"
-            },
-            {
-              "condition": "OR",
-              "key": "Vendor",
-              "operator": "=",
-              "value": "Lukoil"
-            },
-            {
-              "condition": "OR",
-              "key": "Vendor",
-              "operator": "=",
-              "value": "Mol"
-            },
-            {
-              "condition": "OR",
-              "key": "Vendor",
-              "operator": "=",
-              "value": "Petrom"
-            },
-            {
-              "condition": "OR",
-              "key": "Vendor",
-              "operator": "=",
-              "value": "Rompetrol"
-            },
-            {
-              "condition": "AND",
-              "key": "Type",
-              "operator": "=",
-              "value": "95-ös Benzin"
-            }
-          ]
-        }
-      ],
-      "title": "📈 Legnagyobb kereskedők átlagárfejlődése (Prémium gázolaj)",
-      "transparent": true,
-      "type": "timeseries"
-    },
-    {
-      "datasource": {
-        "type": "influxdb",
-        "uid": "_MwRv987k"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 2,
-            "gradientMode": "opacity",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "lineInterpolation": "linear",
-            "lineStyle": {
-              "fill": "solid"
-            },
-            "lineWidth": 2,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "always",
-            "spanNulls": true,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              }
-            ]
-          },
-          "unit": "RON"
-        },
-        "overrides": [
-          {
-            "matcher": {
-              "id": "byName",
-              "options": "GasPrice.Átlagár {Vendor: Gazprom}"
-            },
-            "properties": [
-              {
-                "id": "displayName",
-                "value": "Gazprom"
-              }
-            ]
-          },
-          {
-            "matcher": {
-              "id": "byName",
-              "options": "GasPrice.Átlagár {Vendor: Lukoil}"
-            },
-            "properties": [
-              {
-                "id": "displayName",
-                "value": "Lukoil"
-              }
-            ]
-          },
-          {
-            "matcher": {
-              "id": "byName",
-              "options": "GasPrice.Átlagár {Vendor: Mol}"
-            },
-            "properties": [
-              {
-                "id": "displayName",
-                "value": "Mol"
-              }
-            ]
-          },
-          {
-            "matcher": {
-              "id": "byName",
-              "options": "GasPrice.Átlagár {Vendor: OMV}"
-            },
-            "properties": [
-              {
-                "id": "displayName",
-                "value": "OMV"
-              }
-            ]
-          },
-          {
-            "matcher": {
-              "id": "byName",
-              "options": "GasPrice.Átlagár {Vendor: Petrom}"
-            },
-            "properties": [
-              {
-                "id": "displayName",
-                "value": "Petrom"
-              }
-            ]
-          },
-          {
-            "matcher": {
-              "id": "byName",
-              "options": "GasPrice.Átlagár {Vendor: Rompetrol}"
-            },
-            "properties": [
-              {
-                "id": "displayName",
-                "value": "Rompetrol"
-              }
-            ]
-          }
-        ]
-      },
-      "gridPos": {
-        "h": 9,
-        "w": 12,
-        "x": 12,
-        "y": 138
+        "y": 140
       },
       "id": 62,
       "options": {
@@ -4137,7 +3904,248 @@
         }
       ],
       "title": "📈 Legnagyobb kereskedők átlagárfejlődése (Prémium benzin)",
-      "transparent": true,
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "_MwRv987k"
+      },
+      "description": "Kiválasztott legnagyobb/legnépszerűbb üzemanyagkereskedők kiválasztott periódusra vetített árváltozása a prémium gázolaj értékesítésében.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 2,
+            "gradientMode": "opacity",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 2,
+            "pointSize": 12,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "always",
+            "spanNulls": true,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "RON"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: Gazprom}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Gazprom"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: Lukoil}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Lukoil"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: Mol}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Mol"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: OMV}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "OMV"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: Petrom}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Petrom"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GasPrice.Átlagár {Vendor: Rompetrol}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Rompetrol"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 140
+      },
+      "id": 61,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "_MwRv987k"
+          },
+          "groupBy": [
+            {
+              "params": [
+                "$interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "Vendor"
+              ],
+              "type": "tag"
+            }
+          ],
+          "measurement": "GasPrice",
+          "orderByTime": "ASC",
+          "policy": "GasPriceMonitorization",
+          "query": "SELECT mean(\"Price\") AS \"Átlagár\" FROM \"GasPriceMonitorization\".\"GasPrice\" WHERE (\"Vendor\" = 'OMV' OR \"Vendor\" = 'Gazprom' OR \"Vendor\" = 'Lukoil' OR \"Vendor\" = 'Mol' OR \"Vendor\" = 'Petrom' OR \"Vendor\" = 'Rompetrol') AND \"Type\" = 'Prémium Gázolaj' AND $timeFilter GROUP BY time($interval), \"Vendor\"",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "Price"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              },
+              {
+                "params": [
+                  "Átlagár"
+                ],
+                "type": "alias"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "Vendor",
+              "operator": "=",
+              "value": "OMV"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Gazprom"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Lukoil"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Mol"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Petrom"
+            },
+            {
+              "condition": "OR",
+              "key": "Vendor",
+              "operator": "=",
+              "value": "Rompetrol"
+            },
+            {
+              "condition": "AND",
+              "key": "Type",
+              "operator": "=",
+              "value": "95-ös Benzin"
+            }
+          ]
+        }
+      ],
+      "title": "📈 Legnagyobb kereskedők átlagárfejlődése (Prémium gázolaj)",
       "type": "timeseries"
     },
     {
@@ -4146,7 +4154,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 147
+        "y": 149
       },
       "id": 47,
       "panels": [],
@@ -4158,6 +4166,7 @@
         "type": "influxdb",
         "uid": "_MwRv987k"
       },
+      "description": "A különböző kereskedők átlagosan hány banival árulták olcsóbban/drágábban a benzint a periódus átlagárához viszonyítva.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -4216,7 +4225,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 148
+        "y": 150
       },
       "id": 32,
       "options": {
@@ -4279,7 +4288,6 @@
         }
       ],
       "title": "📈 Benzinár szórás",
-      "transparent": true,
       "type": "timeseries"
     },
     {
@@ -4287,6 +4295,7 @@
         "type": "influxdb",
         "uid": "_MwRv987k"
       },
+      "description": "Betekintést nyújt, hogy a kiválasztott periódusban mekkora terjedelemben árultak a különböző kútak benzint.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -4345,7 +4354,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 148
+        "y": 150
       },
       "id": 50,
       "options": {
@@ -4408,7 +4417,6 @@
         }
       ],
       "title": "📈 Benzinár terjedelem",
-      "transparent": true,
       "type": "timeseries"
     },
     {
@@ -4416,6 +4424,7 @@
         "type": "influxdb",
         "uid": "_MwRv987k"
       },
+      "description": "A különböző kereskedők átlagosan hány banival árulták olcsóbban/drágábban a gázolajt a periódus átlagárához viszonyítva.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -4474,7 +4483,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 156
+        "y": 158
       },
       "id": 33,
       "options": {
@@ -4537,7 +4546,6 @@
         }
       ],
       "title": "📈 Gázolajár szórás",
-      "transparent": true,
       "type": "timeseries"
     },
     {
@@ -4545,6 +4553,7 @@
         "type": "influxdb",
         "uid": "_MwRv987k"
       },
+      "description": "Betekintést nyújt, hogy a kiválasztott periódusban mekkora terjedelemben árultak a különböző kútak gázolajt.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -4603,7 +4612,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 156
+        "y": 158
       },
       "id": 51,
       "options": {
@@ -4666,7 +4675,6 @@
         }
       ],
       "title": "📈 Gázolajár terjedelem",
-      "transparent": true,
       "type": "timeseries"
     },
     {
@@ -4674,6 +4682,7 @@
         "type": "influxdb",
         "uid": "_MwRv987k"
       },
+      "description": "A különböző kereskedők átlagosan hány banival árulták olcsóbban/drágábban a prémium benzint a periódus átlagárához viszonyítva.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -4732,7 +4741,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 164
+        "y": 166
       },
       "id": 35,
       "options": {
@@ -4795,7 +4804,6 @@
         }
       ],
       "title": "📈 Prémium benzinár szórás",
-      "transparent": true,
       "type": "timeseries"
     },
     {
@@ -4803,6 +4811,7 @@
         "type": "influxdb",
         "uid": "_MwRv987k"
       },
+      "description": "Betekintést nyújt, hogy a kiválasztott periódusban mekkora terjedelemben árultak a különböző kútak prémium benzint.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -4861,7 +4870,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 164
+        "y": 166
       },
       "id": 52,
       "options": {
@@ -4924,7 +4933,6 @@
         }
       ],
       "title": "📈 Prémium benzinár terjedelem",
-      "transparent": true,
       "type": "timeseries"
     },
     {
@@ -4932,6 +4940,7 @@
         "type": "influxdb",
         "uid": "_MwRv987k"
       },
+      "description": "A különböző kereskedők átlagosan hány banival árulták olcsóbban/drágábban a prémium gázolajt a periódus átlagárához viszonyítva.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -4990,7 +4999,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 172
+        "y": 174
       },
       "id": 34,
       "options": {
@@ -5053,7 +5062,6 @@
         }
       ],
       "title": "📈 Prémium gázolajár szórás",
-      "transparent": true,
       "type": "timeseries"
     },
     {
@@ -5061,6 +5069,7 @@
         "type": "influxdb",
         "uid": "_MwRv987k"
       },
+      "description": "Betekintést nyújt, hogy a kiválasztott periódusban mekkora terjedelemben árultak a különböző kútak prémium gázolajt.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -5119,7 +5128,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 172
+        "y": 174
       },
       "id": 53,
       "options": {
@@ -5182,7 +5191,6 @@
         }
       ],
       "title": "📈 Prémium gázolajár terjedelem",
-      "transparent": true,
       "type": "timeseries"
     },
     {
@@ -5191,7 +5199,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 180
+        "y": 182
       },
       "id": 49,
       "panels": [],
@@ -5203,6 +5211,7 @@
         "type": "influxdb",
         "uid": "_MwRv987k"
       },
+      "description": "Kiválasztott periódus szerint nyersadatok, város-megye-üzemanyag típus, majd kereskedő szerint csoportosítva.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -5275,6 +5284,18 @@
                 "value": "Kereskedő"
               }
             ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Type"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Típus"
+              }
+            ]
           }
         ]
       },
@@ -5282,7 +5303,7 @@
         "h": 16,
         "w": 24,
         "x": 0,
-        "y": 181
+        "y": 183
       },
       "id": 43,
       "options": {
@@ -5354,11 +5375,10 @@
         }
       ],
       "title": "🗄️ Üzemanyagpiac nyerstáblázata",
-      "transparent": true,
       "type": "table"
     }
   ],
-  "refresh": false,
+  "refresh": "5s",
   "schemaVersion": 36,
   "style": "dark",
   "tags": [],
@@ -5366,7 +5386,7 @@
     "list": []
   },
   "time": {
-    "from": "now-2d",
+    "from": "now-24h",
     "to": "now"
   },
   "timepicker": {
@@ -5387,6 +5407,6 @@
   "timezone": "",
   "title": "Gas Price Monitorization",
   "uid": "TfYiDrUnz",
-  "version": 105,
+  "version": 121,
   "weekStart": ""
 }

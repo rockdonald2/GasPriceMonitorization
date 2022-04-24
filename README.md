@@ -16,3 +16,4 @@ Dockerized project for Kaufland monitorization.
 - Execute `bash backupData.sh` on local machine to backup data from Jupyter container; **Note**: backups and removes all data from container!
 - Execute `bash archiveData.sh` on local machine to archive in `year_month` format all dangling data in `data` directory on local FS.
 - For dashboard import `echarts` plugin has to be installed on Grafana container: `grafana-cli plugins install bilibala-echarts-panel`.
+- For dashboard import `clock` plugin has to be installed on Grafana container: `grafana-cli plugins install grafana-clock-panel`.
