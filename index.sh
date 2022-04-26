@@ -12,7 +12,7 @@ then
     exit 1
 fi
 
-DELAY=10m
+DELAY=15m
 
 # sleep for a specific amount of time to finalize setup
 echo "Sleep for $DELAY to finalize setup." && sleep "$DELAY"
