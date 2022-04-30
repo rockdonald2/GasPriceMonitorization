@@ -10,13 +10,19 @@ do
         exit 1
     fi
 
-    if ! jupyter nbconvert --execute /home/jovyan/work/workspace/upload.ipynb --to notebook --ExecutePreprocessor.timeout=-1
+    if ! jupyter nbconvert --execute /home/jovyan/work/workspace/upload_gas.ipynb --to notebook --ExecutePreprocessor.timeout=-1
     then
         echo 'Failed to execute upload notebook.' >> /home/jovyan/work/workspace/error
         exit 1
     fi
 
-    rm /home/jovyan/work/workspace/scrape.nbconvert.ipynb /home/jovyan/work/workspace/upload.nbconvert.ipynb
+    if ! jupyter nbconvert --execute /home/jovyan/work/workspace/upload_crude.ipynb --to notebook --ExecutePreprocessor.timeout=-1
+    then
+        echo 'Failed to execute upload notebook.' >> /home/jovyan/work/workspace/error
+        exit 1
+    fi
+
+    rm /home/jovyan/work/workspace/scrape.nbconvert.ipynb /home/jovyan/work/workspace/upload_gas.nbconvert.ipynb /home/jovyan/work/workspace/upload_crude.nbconvert.ipynb
 
     echo "Finished scraping GasPrice data at $(date)." >> /home/jovyan/work/workspace/log
 

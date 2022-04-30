@@ -17,3 +17,4 @@ Dockerized project for Kaufland monitorization.
 - Execute `bash archiveData.sh` on local machine to archive in `year_month` format all dangling data in `data` directory on local FS.
 - For dashboard import `echarts` plugin has to be installed on Grafana container: `grafana-cli plugins install bilibala-echarts-panel`.
 - For dashboard import `clock` plugin has to be installed on Grafana container: `grafana-cli plugins install grafana-clock-panel`.
+- Execute `bash run.sh` to restart containers after `docker compose stop`.
