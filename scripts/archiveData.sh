@@ -12,3 +12,9 @@ do
     name=$(echo "$d" | cut -d/ -f3)
     mv "$d" "$root_path"/"$folder_name"/"$name"
 done
+
+for d in $(find $root_path -maxdepth 1 -name "crude_tmp-*.json" -type f)
+do
+    name=$(echo "$d" | cut -d/ -f3)
+    mv "$d" "$root_path"/"$folder_name"/"$name"
+done

@@ -23,3 +23,20 @@ do
         exit 1
     fi
 done
+
+for d in $(docker exec "$CONTAINER_NAME" find /home/jovyan/work/workspace -maxdepth 1 -name "crude_tmp-*.json" -type f)
+do
+    name=$(echo "$d" | cut -d/ -f6)
+    
+    if ! docker cp "$CONTAINER_NAME":"$d" "../data/$name"
+    then
+        echo "Failed to copy data from container: $d; exiting."
+        exit 1
+    fi
+
+    if ! docker exec "$CONTAINER_NAME" rm "$d"
+    then
+        echo "Failed to delete backed up data: $d; exiting."
+        exit 1
+    fi
+done
