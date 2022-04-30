@@ -17,22 +17,29 @@ DELAY=15m
 # sleep for a specific amount of time to finalize setup
 echo "Sleep for $DELAY to finalize setup." && sleep "$DELAY"
 
-if ! bash "./scripts/setup.sh"
+if ! "./scripts/setup.sh"
 then
     echo "Failed to execute setup script."
     exit 1
 fi
 
-JUPYTER_CONTAINER=jupyter
-
-if ! docker exec -d "$JUPYTER_CONTAINER" bash /home/jovyan/work/workspace/createdb.sh
+if ! "./scripts/install_plugins.sh"
 then
-    echo "Failed to start createdb script."
+    echo "Failed to execute install plugins script."
     exit 1
 fi
 
-if ! docker exec -d "$JUPYTER_CONTAINER" bash /home/jovyan/work/workspace/scrape.sh
+JUPYTER_CONTAINER=jupyter
+
+if ! docker exec "$JUPYTER_CONTAINER" /home/jovyan/work/workspace/createdb.sh
 then
-    echo "Failed to start auto-pull scrape script."
+    echo "Failed to execute createdb script."
+    exit 1
+fi
+
+# blocking script, should be run in detached
+if ! docker exec -d "$JUPYTER_CONTAINER" /home/jovyan/work/workspace/scrape.sh
+then
+    echo "Failed to execute auto-pull scrape script."
     exit 1
 fi
