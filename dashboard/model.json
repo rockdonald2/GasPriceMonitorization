@@ -21,7 +21,7 @@
       }
     ]
   },
-  "description": "",
+  "description": "Naponta frissülő romániai üzemanyagár figyelő, monitorizáló és vizualizáló dashboard, amelynek célja, hogy átfogó képet nyújtson a romániai üzemanyagpiacról.",
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
@@ -5788,7 +5788,9 @@
   "refresh": "",
   "schemaVersion": 36,
   "style": "dark",
-  "tags": [],
+  "tags": [
+    "GasPriceMonitorization"
+  ],
   "templating": {
     "list": [
       {
@@ -5825,9 +5827,9 @@
       "1d"
     ]
   },
-  "timezone": "",
+  "timezone": "Europe/Bucharest",
   "title": "Gas Price Monitorization",
   "uid": "TfYiDrUnz",
-  "version": 140,
-  "weekStart": ""
+  "version": 143,
+  "weekStart": "monday"
 }
