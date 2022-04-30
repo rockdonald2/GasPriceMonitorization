@@ -26,7 +26,7 @@
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
   "id": 1,
-  "iteration": 1651340339748,
+  "iteration": 1651340339756,
   "links": [],
   "liveNow": true,
   "panels": [
@@ -994,7 +994,7 @@
         "type": "influxdb",
         "uid": "_MwRv987k"
       },
-      "description": "Naponta frissített Brent nyersolajár",
+      "description": "Naponta frissített Brent nyersolajár.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -2424,7 +2424,8 @@
             "axisGridShow": true,
             "axisLabel": "",
             "axisPlacement": "auto",
-            "axisSoftMin": 0,
+            "axisSoftMax": 9,
+            "axisSoftMin": 4,
             "fillOpacity": 80,
             "gradientMode": "none",
             "hideFrom": {
@@ -2714,7 +2715,8 @@
             "axisGridShow": true,
             "axisLabel": "",
             "axisPlacement": "auto",
-            "axisSoftMin": 0,
+            "axisSoftMax": 9.5,
+            "axisSoftMin": 4,
             "fillOpacity": 80,
             "gradientMode": "none",
             "hideFrom": {
@@ -3004,7 +3006,8 @@
             "axisGridShow": true,
             "axisLabel": "",
             "axisPlacement": "auto",
-            "axisSoftMin": 0,
+            "axisSoftMax": 9.5,
+            "axisSoftMin": 4,
             "fillOpacity": 80,
             "gradientMode": "none",
             "hideFrom": {
@@ -3294,7 +3297,8 @@
             "axisGridShow": true,
             "axisLabel": "",
             "axisPlacement": "auto",
-            "axisSoftMin": 0,
+            "axisSoftMax": 10,
+            "axisSoftMin": 4,
             "fillOpacity": 80,
             "gradientMode": "none",
             "hideFrom": {
@@ -5824,6 +5828,6 @@
   "timezone": "",
   "title": "Gas Price Monitorization",
   "uid": "TfYiDrUnz",
-  "version": 139,
+  "version": 140,
   "weekStart": ""
 }
