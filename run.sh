@@ -16,7 +16,7 @@ fi
 
 # starts scrape on Jupyter container, initiates a scrape at the beginning
 JUPYTER_CONTAINER=jupyter
-if ! docker exec -d "$JUPYTER_CONTAINER" bash /home/jovyan/work/workspace/scrape.sh
+if ! docker exec -d "$JUPYTER_CONTAINER" /home/jovyan/work/workspace/scrape.sh
 then
     echo "Failed to start auto-pull scrape script."
     exit 1
