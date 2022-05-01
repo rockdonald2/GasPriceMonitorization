@@ -26,7 +26,7 @@
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
   "id": 1,
-  "iteration": 1651340339756,
+  "iteration": 1651394373611,
   "links": [],
   "liveNow": true,
   "panels": [
@@ -5702,6 +5702,18 @@
                 "value": "gradient-gauge"
               }
             ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Addr"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Cím"
+              }
+            ]
           }
         ]
       },
@@ -5755,6 +5767,18 @@
                 "Vendor"
               ],
               "type": "tag"
+            },
+            {
+              "params": [
+                "Addr"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
             }
           ],
           "measurement": "GasPrice",
@@ -5830,6 +5854,6 @@
   "timezone": "Europe/Bucharest",
   "title": "Gas Price Monitorization",
   "uid": "TfYiDrUnz",
-  "version": 143,
+  "version": 146,
   "weekStart": "monday"
 }
