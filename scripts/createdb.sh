@@ -2,7 +2,7 @@
 
 if ! jupyter nbconvert --execute /home/jovyan/work/workspace/createdb.ipynb --to notebook --ExecutePreprocessor.timeout=-1
 then
-    echo 'Failed to execute createdb notebook.' >> /home/jovyan/work/workspace/error
+    echo "Failed to execute createdb notebook at $(date)." >> /home/jovyan/work/workspace/error
     exit 1
 fi
 
