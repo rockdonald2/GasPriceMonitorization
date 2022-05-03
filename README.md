@@ -11,7 +11,7 @@ Dockerized project for Romanian gas prices monitorization.
 
 **Note**: this won't contain the created dashboard's model, only periodically pulls data from an external server and puts into an InfluxDB bucket. _Data source is [peco-online](https://www.peco-online.ro/)_.
 
-`index.sh` shell script will create Docker containers, start them and initiate the scraping mechanism, which periodically resets itself.  
+`index.sh` shell script will create Docker containers, start them and initiate the scraping mechanism, which periodically (currently every day) resets itself.  
 To recreate dashboard the `model.json` should be imported into a Grafana dashboard from the `dashboard` directory.
 
 ## Short description
@@ -19,6 +19,8 @@ To recreate dashboard the `model.json` should be imported into a Grafana dashboa
 Dockerized dashboard about Romanian gas and Brent crude oil prices with daily scraped new data where researchers can examine the current trends in the oil industry.
 
 Daily data is scraped with `scrape.sh` and `scrape.ipynb` with BeautifulSoup4 from [peco-online](peco-online.ro), then uploaded into an InfluxDB database named `GasPriceMonitorization` and visualized in a Grafana dashboard, ensuring a consistent flow of information, providing great insights into a ever-changing industry.
+
+Later augmented with Brent crude oil prices to analyze connections between the two.
 
 ---
 
