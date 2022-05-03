@@ -29,3 +29,4 @@ Daily data is scraped with `scrape.sh` and `scrape.ipynb` with BeautifulSoup4 fr
 - Execute `bash run.sh` in project's root directory to restart containers after `docker compose stop`.
 - For dashboard import `echarts` plugin has to be installed on Grafana container: `grafana-cli plugins install bilibala-echarts-panel`.
 - For dashboard import `clock` plugin has to be installed on Grafana container: `grafana-cli plugins install grafana-clock-panel`.
+- Start containers with `docker compose start` to not initiate a scrape session.
