@@ -13,13 +13,20 @@ then
     exit 1
 fi
 
-DELAY=15m
+DELAY=5m
 
 # sleep for a specific amount of time to finalize setup, actually depends on the machine
 echo "Sleep for $DELAY to finalize setup." && sleep "$DELAY"
 
 JUPYTER_CONTAINER=jupyter
 ROOT_J='/etc/share/ref/jupyter'
+
+# create influxdb database to hold our data
+if ! docker exec "$JUPYTER_CONTAINER" $ROOT_J/createdb.sh
+then
+    echo "Failed to execute createdb script."
+    exit 1
+fi
 
 # blocking script, should be run in detached, initiates scraping session
 if ! docker exec -d "$JUPYTER_CONTAINER" $ROOT_J/scrape.sh

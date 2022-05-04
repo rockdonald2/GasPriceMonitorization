@@ -18,5 +18,3 @@ COPY data/counties.json ${ROOT}/counties.json
 
 COPY scripts/createdb.sh ${ROOT}/createdb.sh
 RUN chmod a+x ${ROOT}/createdb.sh
-# create influxdb databases
-RUN ${ROOT}/createdb.sh
