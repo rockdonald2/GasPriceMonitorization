@@ -5,7 +5,7 @@ Dockerized project for Romanian gas prices monitorization.
 ## Steps to setup dockerized environment
 
 1. Pull GH repo to local FS,
-2. Create .env file in notebooks dir [as schema below](#env-schema),
+2. Create .env file in `notebooks` dir [as schema below](#env-schema),
 3. Run `bash index.sh` in project's root directory,
 4. Wait for it to complete,
 5. You have a dockerized dashboard application with 3 services: Jupyter, Grafana and InfluxDB at ports `8888` & `3000` & `8086` respectively.
