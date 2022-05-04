@@ -13,7 +13,7 @@ Dockerized project for Romanian gas prices monitorization.
 **Note**: this won't contain the created dashboard's model, only periodically pulls data from an external server and puts into an InfluxDB bucket. _Data source is [peco-online](https://www.peco-online.ro/)_.
 
 `index.sh` shell script will create Docker containers, start them and initiate the scraping mechanism, which periodically (currently every day) resets itself.  
-To recreate dashboard the `model.json` should be imported into a Grafana dashboard from the `dashboard` directory.
+To recreate dashboard the `model.json` should be imported into a Grafana dashboard from the `dashboard` directory.  
 To repload all data run `bash upload_all.sh` in `jupyter container`.
 
 ## Short description
