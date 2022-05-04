@@ -14,6 +14,7 @@ Dockerized project for Romanian gas prices monitorization.
 
 `index.sh` shell script will create Docker containers, start them and initiate the scraping mechanism, which periodically (currently every day) resets itself.  
 To recreate dashboard the `model.json` should be imported into a Grafana dashboard from the `dashboard` directory.
+To repload all data run `bash scripts/upload_all.sh`.
 
 ## Short description
 
@@ -27,8 +28,8 @@ Later augmented with Brent crude oil prices to analyze connections between the t
 
 ### Other remarks
 
-- Execute `bash backupData.sh` in scripts directory, on local machine to backup data from Jupyter container; **Note**: backups and removes all raw data from container!
-- Execute `bash archiveData.sh` in scripts directory, on local machine to archive in `year_month` format all dangling data in `data` directory on local FS.
+- Execute `bash backup_data.sh` in scripts directory, on local machine to backup data from Jupyter container; **Note**: backups and removes all raw data from container!
+- Execute `bash archive_data.sh` in scripts directory, on local machine to archive in `year_month` format all dangling data in `data` directory on local FS.
 - Execute `bash run.sh` in project's root directory to restart containers after `docker compose stop`.
 - For dashboard import `echarts` plugin has to be installed on Grafana container: `grafana-cli plugins install bilibala-echarts-panel`.
 - For dashboard import `clock` plugin has to be installed on Grafana container: `grafana-cli plugins install grafana-clock-panel`.
