@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Starting services."
+
 # starts all services
 if ! docker compose start 1>/dev/null
 then

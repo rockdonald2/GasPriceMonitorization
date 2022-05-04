@@ -22,7 +22,7 @@ services:
     ports:
       - '8888:8888'
     volumes:
-      - ./volumes/jupyter:/home/jovyan/
+      - ./volumes/jupyter:/home/jovyan/work/
     depends_on: 
       - "influxdb"
   grafana:

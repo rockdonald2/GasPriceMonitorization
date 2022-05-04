@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo 'Starting setup.'
+
 mkdir logs 2>>/dev/null
 
 echo '' > logs/log.log
