@@ -5,7 +5,7 @@ echo "Starting services."
 ROOT_J='/etc/share/ref/jupyter'
 
 # starts all services
-if ! docker compose start 1>/dev/null
+if ! docker compose start 1>/logs/log.log 2>/logs/error.log
 then
     echo "Failed to start services."
     exit 1

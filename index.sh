@@ -22,7 +22,7 @@ JUPYTER_CONTAINER=jupyter
 ROOT_J='/etc/share/ref/jupyter'
 
 # create influxdb database to hold our data
-if ! docker exec "$JUPYTER_CONTAINER" $ROOT_J/createdb.sh
+if ! docker exec -d "$JUPYTER_CONTAINER" $ROOT_J/createdb.sh
 then
     echo "Failed to execute createdb script."
     exit 1
