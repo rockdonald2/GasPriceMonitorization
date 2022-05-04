@@ -4,7 +4,7 @@ USER root
 ARG ROOT='/home/jovyan/work/workspace'
 
 # add notebooks to container
-ADD notebooks/* ${ROOT}
+ADD notebooks/* ${ROOT}/
 ADD notebooks/.env ${ROOT}/.env
 
 # add scripts to container

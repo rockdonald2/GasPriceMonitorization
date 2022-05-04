@@ -5,9 +5,10 @@ Dockerized project for Romanian gas prices monitorization.
 ## Steps to setup dockerized environment
 
 1. Pull GH repo to local FS,
-2. Run `bash index.sh` in project's root directory,
-3. Wait for it to complete,
-4. You have a dockerized dashboard application with 3 services: Jupyter, Grafana and InfluxDB at ports `8888` & `3000` & `8086` respectively.
+2. Create .env file in notebooks dir [as schema below](#env-schema),
+3. Run `bash index.sh` in project's root directory,
+4. Wait for it to complete,
+5. You have a dockerized dashboard application with 3 services: Jupyter, Grafana and InfluxDB at ports `8888` & `3000` & `8086` respectively.
 
 **Note**: this won't contain the created dashboard's model, only periodically pulls data from an external server and puts into an InfluxDB bucket. _Data source is [peco-online](https://www.peco-online.ro/)_.
 
@@ -32,3 +33,12 @@ Later augmented with Brent crude oil prices to analyze connections between the t
 - For dashboard import `echarts` plugin has to be installed on Grafana container: `grafana-cli plugins install bilibala-echarts-panel`.
 - For dashboard import `clock` plugin has to be installed on Grafana container: `grafana-cli plugins install grafana-clock-panel`.
 - Start containers with `docker compose start` to not initiate a scrape session.
+
+### .env schema
+
+```plain
+DB_USER=root
+DB_PWD=root
+DB_ADDR=influxdb
+DB_PORT=8086
+```
