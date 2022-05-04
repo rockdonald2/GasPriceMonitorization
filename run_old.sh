@@ -7,6 +7,13 @@ then
     exit 1
 fi
 
+# copies all necessary notebooks and scripts to containers
+if ! bash "./scripts/setup.sh"
+then
+    echo "Failed to execute setup script."
+    exit 1
+fi
+
 # starts scrape on Jupyter container, initiates a scrape at the beginning
 JUPYTER_CONTAINER=jupyter
 if ! docker exec -d "$JUPYTER_CONTAINER" /home/jovyan/work/workspace/scrape.sh

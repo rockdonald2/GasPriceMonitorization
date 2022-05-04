@@ -1,7 +1,9 @@
 version: '3.5'
 services:
   jupyter:
-    image: jupyter/base-notebook
+    build:
+      context: .
+      dockerfile: build/jupyter/Dockerfile
     container_name: jupyter
     hostname: jupyter
     restart: unless-stopped
@@ -10,6 +12,8 @@ services:
       - '8888:8888'
     volumes:
       - ./volumes/jupyter:/home/jovyan/
+    depends_on: 
+      - "influxdb"
   influxdb:
     image: influxdb:1.8
     container_name: influxdb
@@ -22,7 +26,9 @@ services:
     volumes:
       - ./volumes/influxdb:/var/lib/influxdb/
   grafana:
-    image: grafana/grafana
+    build:
+      context: .
+      dockerfile: build/grafana/Dockerfile
     container_name: grafana
     hostname: grafana
     restart: unless-stopped
