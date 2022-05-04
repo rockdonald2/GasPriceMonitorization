@@ -1,5 +1,16 @@
 version: '3.5'
 services:
+  influxdb:
+    image: influxdb:1.8
+    container_name: influxdb
+    hostname: influxdb
+    restart: unless-stopped
+    user: root
+    ports:
+      - '8086:8086'
+      - '8083:8083'
+    volumes:
+      - ./volumes/influxdb:/var/lib/influxdb/
   jupyter:
     build:
       context: .
@@ -14,17 +25,6 @@ services:
       - ./volumes/jupyter:/home/jovyan/
     depends_on: 
       - "influxdb"
-  influxdb:
-    image: influxdb:1.8
-    container_name: influxdb
-    hostname: influxdb
-    restart: unless-stopped
-    user: root
-    ports:
-      - '8086:8086'
-      - '8083:8083'
-    volumes:
-      - ./volumes/influxdb:/var/lib/influxdb/
   grafana:
     build:
       context: .
