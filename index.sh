@@ -7,7 +7,7 @@ mkdir logs 2>>/dev/null
 echo '' > logs/log.log
 echo '' > logs/error.log
 
-if ! docker compose up -d --force-recreate 1>logs/log.log 2>logs/error.log
+if ! docker compose up -d 1>logs/log.log 2>logs/error.log
 then
     echo "Failed to create containers."
     exit 1
