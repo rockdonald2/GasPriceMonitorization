@@ -3,7 +3,7 @@ USER root
 
 ARG ROOT='/etc/share/ref/jupyter'
 
-RUN mkdir ${ROOT} 2>/dev/null
+RUN mkdir -p ${ROOT} 2>/dev/null
 
 # add notebooks to container
 COPY notebooks/* ${ROOT}/
