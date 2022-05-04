@@ -1,11 +1,13 @@
 #!/bin/bash
 
-if ! jupyter nbconvert --execute /home/jovyan/work/workspace/createdb.ipynb --to notebook --ExecutePreprocessor.timeout=-1
+ROOT='/etc/share/ref/jupyter'
+
+if ! jupyter nbconvert --execute $ROOT/createdb.ipynb --to notebook --ExecutePreprocessor.timeout=-1
 then
-    echo "Failed to execute createdb notebook at $(date)." >> /home/jovyan/work/workspace/error
+    echo "Failed to execute createdb notebook at $(date)." >> $ROOT/error
     exit 1
 fi
 
-rm /home/jovyan/work/workspace/createdb.nbconvert.ipynb
+rm $ROOT/createdb.nbconvert.ipynb
 
-echo "Successfully created InfluxDB db at $(date)." >> /home/jovyan/work/workspace/log
+echo "Successfully created InfluxDB db at $(date)." >> $ROOT/log

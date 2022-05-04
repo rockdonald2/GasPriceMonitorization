@@ -1,14 +1,9 @@
 FROM jupyter/base-notebook
 USER root
 
-ARG ROOT='/home/jovyan/work/workspace'
+ARG ROOT='/etc/share/ref/jupyter'
 
-COPY notebooks/createdb.ipynb ${ROOT}/
-COPY notebooks/.env ${ROOT}/.env
-COPY scripts/createdb.sh ${ROOT}/createdb.sh
-RUN chmod a+x ${ROOT}/createdb.sh
-# create influxdb databases
-RUN ${ROOT}/createdb.sh
+RUN mkdir ${ROOT} 2>/dev/null
 
 # add notebooks to container
 COPY notebooks/* ${ROOT}/
@@ -20,3 +15,8 @@ RUN chmod a+x ${ROOT}/scrape.sh
 
 # add data for Romanian counties
 COPY data/counties.json ${ROOT}/counties.json
+
+COPY scripts/createdb.sh ${ROOT}/createdb.sh
+RUN chmod a+x ${ROOT}/createdb.sh
+# create influxdb databases
+RUN ${ROOT}/createdb.sh

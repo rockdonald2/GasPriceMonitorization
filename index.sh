@@ -19,9 +19,10 @@ DELAY=15m
 echo "Sleep for $DELAY to finalize setup." && sleep "$DELAY"
 
 JUPYTER_CONTAINER=jupyter
+ROOT_J='/etc/share/ref/jupyter'
 
 # blocking script, should be run in detached, initiates scraping session
-if ! docker exec -d "$JUPYTER_CONTAINER" /home/jovyan/work/workspace/scrape.sh
+if ! docker exec -d "$JUPYTER_CONTAINER" $ROOT_J/scrape.sh
 then
     echo "Failed to execute auto-pull scrape script."
     exit 1
