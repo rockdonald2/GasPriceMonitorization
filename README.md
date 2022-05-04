@@ -14,7 +14,7 @@ Dockerized project for Romanian gas prices monitorization.
 
 `index.sh` shell script will create Docker containers, start them and initiate the scraping mechanism, which periodically (currently every day) resets itself.  
 To recreate dashboard the `model.json` should be imported into a Grafana dashboard from the `dashboard` directory.
-To repload all data run `bash scripts/upload_all.sh`.
+To repload all data run `bash upload_all.sh` in `jupyter container`.
 
 ## Short description
 
