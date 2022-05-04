@@ -21,9 +21,6 @@ services:
     user: root
     ports:
       - '8888:8888'
-    volumes:
-      - ./volumes/jupyter_home:/home/jovyan/work/
-      - ./volumes/jupyter_ref:/etc/share/ref/jupyter/
     depends_on: 
       - "influxdb"
   grafana:
