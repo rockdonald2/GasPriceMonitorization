@@ -6,8 +6,9 @@
 # data should be backed up in the ../data dir
 
 CONTAINER_NAME=jupyter
+ROOT='/etc/share/ref/jupyter'
 
-for d in $(docker exec "$CONTAINER_NAME" find /home/jovyan/work/workspace -maxdepth 1 -name "gas_tmp-*.json" -type f)
+for d in $(docker exec "$CONTAINER_NAME" find $ROOT -maxdepth 1 -name "gas_tmp-*.json" -type f)
 do
     name=$(echo "$d" | cut -d/ -f6)
     
@@ -24,7 +25,7 @@ do
     fi
 done
 
-for d in $(docker exec "$CONTAINER_NAME" find /home/jovyan/work/workspace -maxdepth 1 -name "crude_tmp-*.json" -type f)
+for d in $(docker exec "$CONTAINER_NAME" find $ROOT -maxdepth 1 -name "crude_tmp-*.json" -type f)
 do
     name=$(echo "$d" | cut -d/ -f6)
     
