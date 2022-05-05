@@ -24,9 +24,9 @@
   "description": "Naponta frissülő romániai üzemanyagár figyelő, monitorizáló és vizualizáló dashboard, amelynek célja, hogy átfogó képet nyújtson a romániai üzemanyagpiacról.",
   "editable": true,
   "fiscalYearStartMonth": 0,
-  "graphTooltip": 0,
+  "graphTooltip": 1,
   "id": 1,
-  "iteration": 1651764914033,
+  "iteration": 1651774372529,
   "links": [],
   "liveNow": true,
   "panels": [
@@ -421,7 +421,7 @@
         ]
       },
       "gridPos": {
-        "h": 17,
+        "h": 12,
         "w": 12,
         "x": 0,
         "y": 17
@@ -609,7 +609,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
+        "h": 12,
         "w": 12,
         "x": 12,
         "y": 17
@@ -1022,9 +1022,202 @@
           "custom": {
             "axisLabel": "",
             "axisPlacement": "auto",
+            "barAlignment": -1,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "currencyUSD"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Closing"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Záró ár"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "High"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Legmagasabb ár"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Low"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Legalacsonyabb ár"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Open"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Nyitóár"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 12,
+        "x": 0,
+        "y": 29
+      },
+      "id": 68,
+      "options": {
+        "candleStyle": "candles",
+        "colorStrategy": "open-close",
+        "colors": {
+          "down": "yellow",
+          "up": "green"
+        },
+        "fields": {
+          "close": "Closing",
+          "high": "High",
+          "low": "Low",
+          "open": "Open",
+          "volume": "Volume"
+        },
+        "includeAllFields": false,
+        "legend": {
+          "calcs": [],
+          "displayMode": "hidden",
+          "placement": "bottom"
+        },
+        "mode": "candles"
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "_MwRv987k"
+          },
+          "groupBy": [],
+          "measurement": "CrudeOil",
+          "orderByTime": "ASC",
+          "policy": "GasPriceMonitorization",
+          "refId": "A",
+          "resultFormat": "table",
+          "select": [
+            [
+              {
+                "params": [
+                  "Closing"
+                ],
+                "type": "field"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "High"
+                ],
+                "type": "field"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "Low"
+                ],
+                "type": "field"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "Open"
+                ],
+                "type": "field"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "Volume"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "title": "📈  Brent nyersolaj áralakulása",
+      "type": "candlestick"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "_MwRv987k"
+      },
+      "description": "Naponta frissített Brent nyersolajár.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "semi-dark-green",
+            "mode": "fixed",
+            "seriesBy": "max"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
             "barAlignment": 0,
             "drawStyle": "line",
-            "fillOpacity": 15,
+            "fillOpacity": 10,
             "gradientMode": "opacity",
             "hideFrom": {
               "legend": false,
@@ -1036,11 +1229,11 @@
               "fill": "solid"
             },
             "lineWidth": 2,
-            "pointSize": 10,
+            "pointSize": 9,
             "scaleDistribution": {
               "type": "linear"
             },
-            "showPoints": "auto",
+            "showPoints": "always",
             "spanNulls": true,
             "stacking": {
               "group": "A",
@@ -1071,19 +1264,19 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Nyersolaj ár"
+                "value": "Záró ár"
               }
             ]
           }
         ]
       },
       "gridPos": {
-        "h": 8,
+        "h": 12,
         "w": 12,
         "x": 12,
-        "y": 26
+        "y": 29
       },
-      "id": 68,
+      "id": 69,
       "options": {
         "legend": {
           "calcs": [],
@@ -1091,10 +1284,11 @@
           "placement": "bottom"
         },
         "tooltip": {
-          "mode": "single",
+          "mode": "multi",
           "sort": "none"
         }
       },
+      "pluginVersion": "v1.0",
       "targets": [
         {
           "datasource": {
@@ -1102,9 +1296,10 @@
             "uid": "_MwRv987k"
           },
           "groupBy": [],
+          "hide": false,
           "measurement": "CrudeOil",
           "orderByTime": "ASC",
-          "policy": "default",
+          "policy": "GasPriceMonitorization",
           "refId": "A",
           "resultFormat": "time_series",
           "select": [
@@ -1120,7 +1315,7 @@
           "tags": []
         }
       ],
-      "title": "📈  Brent nyersolaj áralakulása",
+      "title": "📈  Brent nyersolaj záró-áralakulása",
       "type": "timeseries"
     },
     {
@@ -1200,7 +1395,7 @@
         "h": 9,
         "w": 8,
         "x": 0,
-        "y": 34
+        "y": 41
       },
       "id": 25,
       "options": {
@@ -1313,7 +1508,7 @@
         "h": 9,
         "w": 8,
         "x": 8,
-        "y": 34
+        "y": 41
       },
       "id": 26,
       "options": {
@@ -1447,7 +1642,7 @@
         "h": 9,
         "w": 8,
         "x": 16,
-        "y": 34
+        "y": 41
       },
       "id": 27,
       "options": {
@@ -1574,7 +1769,7 @@
         "h": 9,
         "w": 8,
         "x": 0,
-        "y": 43
+        "y": 50
       },
       "id": 28,
       "options": {
@@ -1701,7 +1896,7 @@
         "h": 9,
         "w": 8,
         "x": 8,
-        "y": 43
+        "y": 50
       },
       "id": 29,
       "options": {
@@ -1828,7 +2023,7 @@
         "h": 9,
         "w": 8,
         "x": 16,
-        "y": 43
+        "y": 50
       },
       "id": 30,
       "options": {
@@ -1887,7 +2082,7 @@
         "h": 15,
         "w": 10,
         "x": 2,
-        "y": 52
+        "y": 59
       },
       "id": 36,
       "options": {
@@ -1956,7 +2151,7 @@
         "h": 15,
         "w": 10,
         "x": 12,
-        "y": 52
+        "y": 59
       },
       "id": 37,
       "options": {
@@ -2025,7 +2220,7 @@
         "h": 16,
         "w": 10,
         "x": 2,
-        "y": 67
+        "y": 74
       },
       "id": 39,
       "options": {
@@ -2094,7 +2289,7 @@
         "h": 16,
         "w": 10,
         "x": 12,
-        "y": 67
+        "y": 74
       },
       "id": 38,
       "options": {
@@ -2163,7 +2358,7 @@
         "h": 15,
         "w": 10,
         "x": 2,
-        "y": 83
+        "y": 90
       },
       "id": 16,
       "options": {
@@ -2232,7 +2427,7 @@
         "h": 15,
         "w": 10,
         "x": 12,
-        "y": 83
+        "y": 90
       },
       "id": 19,
       "options": {
@@ -2301,7 +2496,7 @@
         "h": 15,
         "w": 10,
         "x": 2,
-        "y": 98
+        "y": 105
       },
       "id": 20,
       "options": {
@@ -2370,7 +2565,7 @@
         "h": 15,
         "w": 10,
         "x": 12,
-        "y": 98
+        "y": 105
       },
       "id": 21,
       "options": {
@@ -2628,7 +2823,7 @@
         "h": 11,
         "w": 12,
         "x": 0,
-        "y": 113
+        "y": 120
       },
       "id": 55,
       "options": {
@@ -2919,7 +3114,7 @@
         "h": 11,
         "w": 12,
         "x": 12,
-        "y": 113
+        "y": 120
       },
       "id": 54,
       "options": {
@@ -3210,7 +3405,7 @@
         "h": 11,
         "w": 12,
         "x": 0,
-        "y": 124
+        "y": 131
       },
       "id": 57,
       "options": {
@@ -3501,7 +3696,7 @@
         "h": 11,
         "w": 12,
         "x": 12,
-        "y": 124
+        "y": 131
       },
       "id": 56,
       "options": {
@@ -3727,7 +3922,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 135
+        "y": 142
       },
       "id": 59,
       "options": {
@@ -3969,7 +4164,7 @@
         "h": 9,
         "w": 12,
         "x": 12,
-        "y": 135
+        "y": 142
       },
       "id": 60,
       "options": {
@@ -4211,7 +4406,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 144
+        "y": 151
       },
       "id": 62,
       "options": {
@@ -4453,7 +4648,7 @@
         "h": 9,
         "w": 12,
         "x": 12,
-        "y": 144
+        "y": 151
       },
       "id": 61,
       "options": {
@@ -4568,7 +4763,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 153
+        "y": 160
       },
       "id": 47,
       "panels": [],
@@ -4639,7 +4834,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 154
+        "y": 161
       },
       "id": 32,
       "options": {
@@ -4769,7 +4964,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 154
+        "y": 161
       },
       "id": 50,
       "options": {
@@ -4898,7 +5093,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 162
+        "y": 169
       },
       "id": 33,
       "options": {
@@ -5028,7 +5223,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 162
+        "y": 169
       },
       "id": 51,
       "options": {
@@ -5157,7 +5352,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 170
+        "y": 177
       },
       "id": 35,
       "options": {
@@ -5287,7 +5482,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 170
+        "y": 177
       },
       "id": 52,
       "options": {
@@ -5416,7 +5611,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 178
+        "y": 185
       },
       "id": 34,
       "options": {
@@ -5546,7 +5741,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 178
+        "y": 185
       },
       "id": 53,
       "options": {
@@ -5617,7 +5812,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 186
+        "y": 193
       },
       "id": 49,
       "panels": [],
@@ -5745,7 +5940,7 @@
         "h": 16,
         "w": 24,
         "x": 0,
-        "y": 187
+        "y": 194
       },
       "id": 43,
       "options": {
@@ -5857,7 +6052,7 @@
     ]
   },
   "time": {
-    "from": "now-2d",
+    "from": "now-7d",
     "to": "now"
   },
   "timepicker": {
@@ -5878,6 +6073,6 @@
   "timezone": "Europe/Bucharest",
   "title": "Gas Price Monitorization",
   "uid": "TfYiDrUnz",
-  "version": 155,
+  "version": 159,
   "weekStart": "monday"
 }
