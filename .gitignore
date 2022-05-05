@@ -2,3 +2,4 @@ volumes
 vendor
 .vscode
 .env
+paper
