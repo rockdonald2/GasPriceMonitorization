@@ -12,7 +12,7 @@ for d in $(docker exec "$CONTAINER_NAME" find $ROOT -maxdepth 1 -name "gas_tmp-*
 do
     name=$(echo "$d" | cut -d/ -f6)
     
-    if ! docker cp "$CONTAINER_NAME":"$d" "../data/$name"
+    if ! docker cp "$CONTAINER_NAME":"$d" "./data/$name"
     then
         echo "Failed to copy data from container: $d; exiting."
         exit 1
@@ -29,7 +29,7 @@ for d in $(docker exec "$CONTAINER_NAME" find $ROOT -maxdepth 1 -name "crude_tmp
 do
     name=$(echo "$d" | cut -d/ -f6)
     
-    if ! docker cp "$CONTAINER_NAME":"$d" "../data/$name"
+    if ! docker cp "$CONTAINER_NAME":"$d" "./data/$name"
     then
         echo "Failed to copy data from container: $d; exiting."
         exit 1

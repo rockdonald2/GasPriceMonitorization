@@ -3,7 +3,7 @@
 # TODO: archive data in a year_month date format
 
 folder_name=$(date +%Y_%m)
-root_path="../data"
+root_path="./data"
 
 mkdir "$root_path"/"$folder_name" 1>/dev/null 2>/dev/null
 

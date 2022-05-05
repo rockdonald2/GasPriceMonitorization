@@ -3,6 +3,7 @@ USER root
 
 ARG ROOT='/etc/share/ref/jupyter'
 
+# make working directory
 RUN mkdir -p ${ROOT} 2>/dev/null
 
 # add notebooks to container
@@ -20,8 +21,6 @@ RUN mkdir -p ${ROOT}/archived_data 2>/dev/null
 # copy archived data to contaienr
 COPY data/* ${ROOT}/archived_data/
 
-COPY scripts/upload_all.sh ${ROOT}/upload_all.sh
-RUN chmod a+x ${ROOT}/upload_all.sh
-
+# add script to container that creates InfluxDB bucket
 COPY scripts/createdb.sh ${ROOT}/createdb.sh
 RUN chmod a+x ${ROOT}/createdb.sh
