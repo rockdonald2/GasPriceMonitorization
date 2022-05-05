@@ -26,7 +26,7 @@
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
   "id": 1,
-  "iteration": 1651694822764,
+  "iteration": 1651757893620,
   "links": [],
   "liveNow": true,
   "panels": [
@@ -241,7 +241,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "fixedColor": "yellow",
+            "fixedColor": "#31a354",
             "mode": "fixed"
           },
           "mappings": [],
@@ -277,7 +277,7 @@
           "fields": "",
           "values": true
         },
-        "textMode": "auto"
+        "textMode": "value_and_name"
       },
       "pluginVersion": "v1.0",
       "targets": [
@@ -329,7 +329,7 @@
         "defaults": {
           "color": {
             "fixedColor": "orange",
-            "mode": "palette-classic"
+            "mode": "thresholds"
           },
           "custom": {
             "axisGridShow": true,
@@ -353,7 +353,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
+                "color": "#31a354",
                 "value": null
               }
             ]
@@ -400,20 +400,35 @@
                 }
               }
             ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Medián"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#bae4b3",
+                  "mode": "fixed"
+                }
+              }
+            ]
           }
         ]
       },
       "gridPos": {
-        "h": 19,
+        "h": 17,
         "w": 12,
         "x": 0,
         "y": 17
       },
       "id": 2,
       "options": {
-        "barRadius": 0.1,
-        "barWidth": 0.95,
-        "groupWidth": 0.7,
+        "barRadius": 0.05,
+        "barWidth": 0.9,
+        "groupWidth": 0.75,
         "legend": {
           "calcs": [],
           "displayMode": "list",
@@ -543,7 +558,8 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "palette-classic"
+            "mode": "palette-classic",
+            "seriesBy": "max"
           },
           "custom": {
             "axisLabel": "",
@@ -557,12 +573,12 @@
               "tooltip": false,
               "viz": false
             },
-            "lineInterpolation": "smooth",
+            "lineInterpolation": "linear",
             "lineStyle": {
               "fill": "solid"
             },
             "lineWidth": 2,
-            "pointSize": 12,
+            "pointSize": 9,
             "scaleDistribution": {
               "type": "linear"
             },
@@ -591,7 +607,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 10,
+        "h": 9,
         "w": 12,
         "x": 12,
         "y": 17
@@ -998,21 +1014,22 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "palette-classic"
+            "fixedColor": "#31a354",
+            "mode": "fixed"
           },
           "custom": {
             "axisLabel": "",
             "axisPlacement": "auto",
             "barAlignment": 0,
             "drawStyle": "line",
-            "fillOpacity": 6,
+            "fillOpacity": 15,
             "gradientMode": "opacity",
             "hideFrom": {
               "legend": false,
               "tooltip": false,
               "viz": false
             },
-            "lineInterpolation": "smooth",
+            "lineInterpolation": "linear",
             "lineStyle": {
               "fill": "solid"
             },
@@ -1059,10 +1076,10 @@
         ]
       },
       "gridPos": {
-        "h": 9,
+        "h": 8,
         "w": 12,
         "x": 12,
-        "y": 27
+        "y": 26
       },
       "id": 68,
       "options": {
@@ -1113,7 +1130,7 @@
         "defaults": {
           "color": {
             "mode": "continuous-RdYlGr",
-            "seriesBy": "last"
+            "seriesBy": "max"
           },
           "custom": {
             "axisLabel": "",
@@ -1181,7 +1198,7 @@
         "h": 9,
         "w": 8,
         "x": 0,
-        "y": 36
+        "y": 34
       },
       "id": 25,
       "options": {
@@ -1239,7 +1256,8 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "palette-classic"
+            "mode": "continuous-GrYlRd",
+            "seriesBy": "max"
           },
           "custom": {
             "axisLabel": "",
@@ -1293,7 +1311,7 @@
         "h": 9,
         "w": 8,
         "x": 8,
-        "y": 36
+        "y": 34
       },
       "id": 26,
       "options": {
@@ -1359,7 +1377,7 @@
         "defaults": {
           "color": {
             "mode": "continuous-RdYlGr",
-            "seriesBy": "last"
+            "seriesBy": "max"
           },
           "custom": {
             "axisLabel": "",
@@ -1427,7 +1445,7 @@
         "h": 9,
         "w": 8,
         "x": 16,
-        "y": 36
+        "y": 34
       },
       "id": 27,
       "options": {
@@ -1486,7 +1504,7 @@
         "defaults": {
           "color": {
             "mode": "continuous-RdYlGr",
-            "seriesBy": "last"
+            "seriesBy": "max"
           },
           "custom": {
             "axisLabel": "",
@@ -1554,7 +1572,7 @@
         "h": 9,
         "w": 8,
         "x": 0,
-        "y": 45
+        "y": 43
       },
       "id": 28,
       "options": {
@@ -1613,7 +1631,7 @@
         "defaults": {
           "color": {
             "mode": "continuous-RdYlGr",
-            "seriesBy": "last"
+            "seriesBy": "max"
           },
           "custom": {
             "axisLabel": "",
@@ -1681,7 +1699,7 @@
         "h": 9,
         "w": 8,
         "x": 8,
-        "y": 45
+        "y": 43
       },
       "id": 29,
       "options": {
@@ -1740,7 +1758,7 @@
         "defaults": {
           "color": {
             "mode": "continuous-RdYlGr",
-            "seriesBy": "last"
+            "seriesBy": "max"
           },
           "custom": {
             "axisLabel": "",
@@ -1808,7 +1826,7 @@
         "h": 9,
         "w": 8,
         "x": 16,
-        "y": 45
+        "y": 43
       },
       "id": 30,
       "options": {
@@ -1867,12 +1885,12 @@
         "h": 15,
         "w": 10,
         "x": 2,
-        "y": 54
+        "y": 52
       },
       "id": 36,
       "options": {
         "followTheme": false,
-        "getOption": "$.get('public/maps/romania.geojson', function (res) {\n  echarts.registerMap('Romania', res);\n  \n  queried = data.series.map(d => {\n    return {\n      'name': d.fields[1].labels['ISO'],\n      'value': d.fields[1].values.buffer[0].toFixed(2)\n    }\n  })\n  \n  queried = queried.map(d => {\n\t\treturn {\n      'name': d['name'],\n      'value': parseFloat(d['value'])\n    }  \n  })\n  \n  const min = queried.reduce((prev, curr) => prev['value'] < curr['value'] ? prev : curr)['value']\n  const max = queried.reduce((prev, curr) => prev['value'] > curr['value'] ? prev : curr)['value']\n\t\n  options = {\n    tooltip: {\n      trigger: 'item',\n      showDelay: 0,\n      transitionDuration: 0.2,\n      padding: 10,\n      formatter: '{a}<br>Megye: {b}<br>Átlag ár: {c} RON'\n    },\n    visualMap: {\n      left: 'right',\n\t\t\ttop: 'top',\n      min: min - 0.05,\n      max: max + 0.05,\n      text: ['RON'],\n      formatter: val => val.toFixed(2),\n      textStyle: {\n        \t'color': '#ccc'\n      },\n      inRange: {\n        color: ['#ffffb2','#fed976','#feb24c','#fd8d3c','#f03b20','#bd0026']\n      },\n      calculable: true,\n      realtime: true\n    },\n    toolbox: {\n      show: false,\n    },\n    series: [ \n      {\n        name: '📈 Legnagyobb üzemanyagárak (95-ös benzin)',\n        nameProperty: 'shapeISO',\n        type: 'map',\n        map: 'Romania',\n        data: queried,\n        itemStyle: {\n          borderColor: '#444',\n          borderWidth: '0.75'\n        },\n      \temphasis: {\n          label: {\n            color: '#fff'\n          },\n          itemStyle: {\n            areaColor: null\n          }\n        },\n      }\n    ],\n  }\t\n  \n  echartsInstance.setOption(options)\n})"
+        "getOption": "$.get('public/maps/romania.geojson', function (res) {\n  echarts.registerMap('Romania', res);\n  \n  queried = data.series.map(d => {\n    return {\n      'name': d.fields[1].labels['ISO'],\n      'value': d.fields[1].values.buffer[0].toFixed(2)\n    }\n  })\n  \n  queried = queried.map(d => {\n\t\treturn {\n      'name': d['name'],\n      'value': parseFloat(d['value'])\n    }  \n  })\n  \n  const min = queried.reduce((prev, curr) => prev['value'] < curr['value'] ? prev : curr)['value']\n  const max = queried.reduce((prev, curr) => prev['value'] > curr['value'] ? prev : curr)['value']\n\t\n  options = {\n    tooltip: {\n      trigger: 'item',\n      showDelay: 0,\n      transitionDuration: 0.2,\n      padding: 10,\n      formatter: '{a}<br>Megye: {b}<br>Átlag ár: {c} RON'\n    },\n    visualMap: {\n      left: 'right',\n\t\t\ttop: 'top',\n      min: min - 0.05,\n      max: max + 0.05,\n      text: ['RON'],\n      formatter: val => val.toFixed(2),\n      textStyle: {\n        \t'color': '#ccc'\n      },\n      inRange: {\n        color: ['#edf8e9','#bae4b3','#74c476','#31a354','#006d2c']\n      },\n      calculable: true,\n      realtime: true\n    },\n    toolbox: {\n      show: false,\n    },\n    series: [ \n      {\n        name: '📈 Legnagyobb üzemanyagárak (95-ös benzin)',\n        nameProperty: 'shapeISO',\n        type: 'map',\n        map: 'Romania',\n        data: queried,\n        itemStyle: {\n          borderColor: '#444',\n          borderWidth: '0.75'\n        },\n      \temphasis: {\n          label: {\n            color: '#fff'\n          },\n          itemStyle: {\n            areaColor: null\n          }\n        },\n      }\n    ],\n  }\t\n  \n  echartsInstance.setOption(options)\n})"
       },
       "pluginVersion": "v1.0",
       "targets": [
@@ -1936,12 +1954,12 @@
         "h": 15,
         "w": 10,
         "x": 12,
-        "y": 54
+        "y": 52
       },
       "id": 37,
       "options": {
         "followTheme": false,
-        "getOption": "$.get('public/maps/romania.geojson', function (res) {\n  echarts.registerMap('Romania', res);\n  \n  queried = data.series.map(d => {\n    return {\n      'name': d.fields[1].labels['ISO'],\n      'value': d.fields[1].values.buffer[0].toFixed(2)\n    }\n  })\n  \n  queried = queried.map(d => {\n\t\treturn {\n      'name': d['name'],\n      'value': parseFloat(d['value'])\n    }  \n  })\n  \n  const min = queried.reduce((prev, curr) => prev['value'] < curr['value'] ? prev : curr)['value']\n  const max = queried.reduce((prev, curr) => prev['value'] > curr['value'] ? prev : curr)['value']\n\t\n  options = {\n    tooltip: {\n      trigger: 'item',\n      showDelay: 0,\n      transitionDuration: 0.2,\n      padding: 10,\n      formatter: '{a}<br>Megye: {b}<br>Átlag ár: {c} RON'\n    },\n    visualMap: {\n      left: 'right',\n\t\t\ttop: 'top',\n      min: min - 0.05,\n      max: max + 0.05,\n      text: ['RON'],\n      formatter: val => val.toFixed(2),\n      textStyle: {\n        \t'color': '#ccc'\n      },\n      inRange: {\n        color: ['#ffffb2','#fed976','#feb24c','#fd8d3c','#f03b20','#bd0026']\n      },\n      calculable: true,\n      realtime: true\n    },\n    toolbox: {\n      show: false,\n    },\n    series: [ \n      {\n        name: '📈 Legnagyobb üzemanyagárak (95-ös benzin)',\n        nameProperty: 'shapeISO',\n        type: 'map',\n        map: 'Romania',\n        data: queried,\n        itemStyle: {\n          borderColor: '#444',\n          borderWidth: '0.75'\n        },\n      \temphasis: {\n          label: {\n            color: '#fff'\n          },\n          itemStyle: {\n            areaColor: null\n          }\n        },\n      }\n    ],\n  }\t\n  \n  echartsInstance.setOption(options)\n})"
+        "getOption": "$.get('public/maps/romania.geojson', function (res) {\n  echarts.registerMap('Romania', res);\n  \n  queried = data.series.map(d => {\n    return {\n      'name': d.fields[1].labels['ISO'],\n      'value': d.fields[1].values.buffer[0].toFixed(2)\n    }\n  })\n  \n  queried = queried.map(d => {\n\t\treturn {\n      'name': d['name'],\n      'value': parseFloat(d['value'])\n    }  \n  })\n  \n  const min = queried.reduce((prev, curr) => prev['value'] < curr['value'] ? prev : curr)['value']\n  const max = queried.reduce((prev, curr) => prev['value'] > curr['value'] ? prev : curr)['value']\n\t\n  options = {\n    tooltip: {\n      trigger: 'item',\n      showDelay: 0,\n      transitionDuration: 0.2,\n      padding: 10,\n      formatter: '{a}<br>Megye: {b}<br>Átlag ár: {c} RON'\n    },\n    visualMap: {\n      left: 'right',\n\t\t\ttop: 'top',\n      min: min - 0.05,\n      max: max + 0.05,\n      text: ['RON'],\n      formatter: val => val.toFixed(2),\n      textStyle: {\n        \t'color': '#ccc'\n      },\n      inRange: {\n        color: ['#edf8e9','#bae4b3','#74c476','#31a354','#006d2c']\n      },\n      calculable: true,\n      realtime: true\n    },\n    toolbox: {\n      show: false,\n    },\n    series: [ \n      {\n        name: '📈 Legnagyobb üzemanyagárak (95-ös benzin)',\n        nameProperty: 'shapeISO',\n        type: 'map',\n        map: 'Romania',\n        data: queried,\n        itemStyle: {\n          borderColor: '#444',\n          borderWidth: '0.75'\n        },\n      \temphasis: {\n          label: {\n            color: '#fff'\n          },\n          itemStyle: {\n            areaColor: null\n          }\n        },\n      }\n    ],\n  }\t\n  \n  echartsInstance.setOption(options)\n})"
       },
       "pluginVersion": "v1.0",
       "targets": [
@@ -2005,12 +2023,12 @@
         "h": 16,
         "w": 10,
         "x": 2,
-        "y": 69
+        "y": 67
       },
       "id": 39,
       "options": {
         "followTheme": false,
-        "getOption": "$.get('public/maps/romania.geojson', function (res) {\n  echarts.registerMap('Romania', res);\n  \n  queried = data.series.map(d => {\n    return {\n      'name': d.fields[1].labels['ISO'],\n      'value': d.fields[1].values.buffer[0].toFixed(2)\n    }\n  })\n  \n  queried = queried.map(d => {\n\t\treturn {\n      'name': d['name'],\n      'value': parseFloat(d['value'])\n    }  \n  })\n  \n  const min = queried.reduce((prev, curr) => prev['value'] < curr['value'] ? prev : curr)['value']\n  const max = queried.reduce((prev, curr) => prev['value'] > curr['value'] ? prev : curr)['value']\n\t\n  options = {\n    tooltip: {\n      trigger: 'item',\n      showDelay: 0,\n      transitionDuration: 0.2,\n      padding: 10,\n      formatter: '{a}<br>Megye: {b}<br>Átlag ár: {c} RON'\n    },\n    visualMap: {\n      left: 'right',\n\t\t\ttop: 'top',\n      min: min - 0.05,\n      max: max + 0.05,\n      text: ['RON'],\n      formatter: val => val.toFixed(2),\n      textStyle: {\n        \t'color': '#ccc'\n      },\n      inRange: {\n        color: ['#ffffb2','#fed976','#feb24c','#fd8d3c','#f03b20','#bd0026']\n      },\n      calculable: true,\n      realtime: true\n    },\n    toolbox: {\n      show: false,\n    },\n    series: [ \n      {\n        name: '📈 Legnagyobb üzemanyagárak (95-ös benzin)',\n        nameProperty: 'shapeISO',\n        type: 'map',\n        map: 'Romania',\n        data: queried,\n        itemStyle: {\n          borderColor: '#444',\n          borderWidth: '0.75'\n        },\n      \temphasis: {\n          label: {\n            color: '#fff'\n          },\n          itemStyle: {\n            areaColor: null\n          }\n        },\n      }\n    ],\n  }\t\n  \n  echartsInstance.setOption(options)\n})"
+        "getOption": "$.get('public/maps/romania.geojson', function (res) {\n  echarts.registerMap('Romania', res);\n  \n  queried = data.series.map(d => {\n    return {\n      'name': d.fields[1].labels['ISO'],\n      'value': d.fields[1].values.buffer[0].toFixed(2)\n    }\n  })\n  \n  queried = queried.map(d => {\n\t\treturn {\n      'name': d['name'],\n      'value': parseFloat(d['value'])\n    }  \n  })\n  \n  const min = queried.reduce((prev, curr) => prev['value'] < curr['value'] ? prev : curr)['value']\n  const max = queried.reduce((prev, curr) => prev['value'] > curr['value'] ? prev : curr)['value']\n\t\n  options = {\n    tooltip: {\n      trigger: 'item',\n      showDelay: 0,\n      transitionDuration: 0.2,\n      padding: 10,\n      formatter: '{a}<br>Megye: {b}<br>Átlag ár: {c} RON'\n    },\n    visualMap: {\n      left: 'right',\n\t\t\ttop: 'top',\n      min: min - 0.05,\n      max: max + 0.05,\n      text: ['RON'],\n      formatter: val => val.toFixed(2),\n      textStyle: {\n        \t'color': '#ccc'\n      },\n      inRange: {\n        color: ['#edf8e9','#bae4b3','#74c476','#31a354','#006d2c']\n      },\n      calculable: true,\n      realtime: true\n    },\n    toolbox: {\n      show: false,\n    },\n    series: [ \n      {\n        name: '📈 Legnagyobb üzemanyagárak (95-ös benzin)',\n        nameProperty: 'shapeISO',\n        type: 'map',\n        map: 'Romania',\n        data: queried,\n        itemStyle: {\n          borderColor: '#444',\n          borderWidth: '0.75'\n        },\n      \temphasis: {\n          label: {\n            color: '#fff'\n          },\n          itemStyle: {\n            areaColor: null\n          }\n        },\n      }\n    ],\n  }\t\n  \n  echartsInstance.setOption(options)\n})"
       },
       "pluginVersion": "v1.0",
       "targets": [
@@ -2074,12 +2092,12 @@
         "h": 16,
         "w": 10,
         "x": 12,
-        "y": 69
+        "y": 67
       },
       "id": 38,
       "options": {
         "followTheme": false,
-        "getOption": "$.get('public/maps/romania.geojson', function (res) {\n  echarts.registerMap('Romania', res);\n  \n  queried = data.series.map(d => {\n    return {\n      'name': d.fields[1].labels['ISO'],\n      'value': d.fields[1].values.buffer[0].toFixed(2)\n    }\n  })\n  \n  queried = queried.map(d => {\n\t\treturn {\n      'name': d['name'],\n      'value': parseFloat(d['value'])\n    }  \n  })\n  \n  const min = queried.reduce((prev, curr) => prev['value'] < curr['value'] ? prev : curr)['value']\n  const max = queried.reduce((prev, curr) => prev['value'] > curr['value'] ? prev : curr)['value']\n\t\n  options = {\n    tooltip: {\n      trigger: 'item',\n      showDelay: 0,\n      transitionDuration: 0.2,\n      padding: 10,\n      formatter: '{a}<br>Megye: {b}<br>Átlag ár: {c} RON'\n    },\n    visualMap: {\n      left: 'right',\n\t\t\ttop: 'top',\n      min: min - 0.05,\n      max: max + 0.05,\n      text: ['RON'],\n      formatter: val => val.toFixed(2),\n      textStyle: {\n        \t'color': '#ccc'\n      },\n      inRange: {\n        color: ['#ffffb2','#fed976','#feb24c','#fd8d3c','#f03b20','#bd0026']\n      },\n      calculable: true,\n      realtime: true\n    },\n    toolbox: {\n      show: false,\n    },\n    series: [ \n      {\n        name: '📈 Legnagyobb üzemanyagárak (95-ös benzin)',\n        nameProperty: 'shapeISO',\n        type: 'map',\n        map: 'Romania',\n        data: queried,\n        itemStyle: {\n          borderColor: '#444',\n          borderWidth: '0.75'\n        },\n      \temphasis: {\n          label: {\n            color: '#fff'\n          },\n          itemStyle: {\n            areaColor: null\n          }\n        },\n      }\n    ],\n  }\t\n  \n  echartsInstance.setOption(options)\n})"
+        "getOption": "$.get('public/maps/romania.geojson', function (res) {\n  echarts.registerMap('Romania', res);\n  \n  queried = data.series.map(d => {\n    return {\n      'name': d.fields[1].labels['ISO'],\n      'value': d.fields[1].values.buffer[0].toFixed(2)\n    }\n  })\n  \n  queried = queried.map(d => {\n\t\treturn {\n      'name': d['name'],\n      'value': parseFloat(d['value'])\n    }  \n  })\n  \n  const min = queried.reduce((prev, curr) => prev['value'] < curr['value'] ? prev : curr)['value']\n  const max = queried.reduce((prev, curr) => prev['value'] > curr['value'] ? prev : curr)['value']\n\t\n  options = {\n    tooltip: {\n      trigger: 'item',\n      showDelay: 0,\n      transitionDuration: 0.2,\n      padding: 10,\n      formatter: '{a}<br>Megye: {b}<br>Átlag ár: {c} RON'\n    },\n    visualMap: {\n      left: 'right',\n\t\t\ttop: 'top',\n      min: min - 0.05,\n      max: max + 0.05,\n      text: ['RON'],\n      formatter: val => val.toFixed(2),\n      textStyle: {\n        \t'color': '#ccc'\n      },\n      inRange: {\n        color: ['#edf8e9','#bae4b3','#74c476','#31a354','#006d2c']\n      },\n      calculable: true,\n      realtime: true\n    },\n    toolbox: {\n      show: false,\n    },\n    series: [ \n      {\n        name: '📈 Legnagyobb üzemanyagárak (95-ös benzin)',\n        nameProperty: 'shapeISO',\n        type: 'map',\n        map: 'Romania',\n        data: queried,\n        itemStyle: {\n          borderColor: '#444',\n          borderWidth: '0.75'\n        },\n      \temphasis: {\n          label: {\n            color: '#fff'\n          },\n          itemStyle: {\n            areaColor: null\n          }\n        },\n      }\n    ],\n  }\t\n  \n  echartsInstance.setOption(options)\n})"
       },
       "pluginVersion": "v1.0",
       "targets": [
@@ -2143,12 +2161,12 @@
         "h": 15,
         "w": 10,
         "x": 2,
-        "y": 85
+        "y": 83
       },
       "id": 16,
       "options": {
         "followTheme": false,
-        "getOption": "$.get('public/maps/romania.geojson', function (res) {\n  echarts.registerMap('Romania', res);\n  \n  queried = data.series.map(d => {\n    return {\n      'name': d.fields[1].labels['ISO'],\n      'value': d.fields[1].values.buffer[0].toFixed(2)\n    }\n  })\n  \n  queried = queried.map(d => {\n\t\treturn {\n      'name': d['name'],\n      'value': parseFloat(d['value'])\n    }  \n  })\n  \n  const min = queried.reduce((prev, curr) => prev['value'] < curr['value'] ? prev : curr)['value']\n  const max = queried.reduce((prev, curr) => prev['value'] > curr['value'] ? prev : curr)['value']\n\t\n  options = {\n    tooltip: {\n      trigger: 'item',\n      showDelay: 0,\n      transitionDuration: 0.2,\n      padding: 10,\n      formatter: '{a}<br>Megye: {b}<br>Max ár: {c} RON'\n    },\n    visualMap: {\n      left: 'right',\n\t\t\ttop: 'top',\n      min: min - 0.05,\n      max: max + 0.05,\n      text: ['RON'],\n      formatter: val => val.toFixed(2),\n      textStyle: {\n        \t'color': '#ccc'\n      },\n      inRange: {\n        color: ['#ffffb2','#fed976','#feb24c','#fd8d3c','#f03b20','#bd0026']\n      },\n      calculable: true,\n      realtime: true\n    },\n    toolbox: {\n      show: false,\n    },\n    series: [ \n      {\n        name: '📈 Legnagyobb üzemanyagárak (95-ös benzin)',\n        nameProperty: 'shapeISO',\n        type: 'map',\n        map: 'Romania',\n        data: queried,\n        itemStyle: {\n          borderColor: '#444',\n          borderWidth: '0.75'\n        },\n      \temphasis: {\n          label: {\n            color: '#fff'\n          },\n          itemStyle: {\n            areaColor: null\n          }\n        },\n      }\n    ],\n  }\t\n  \n  echartsInstance.setOption(options)\n})"
+        "getOption": "$.get('public/maps/romania.geojson', function (res) {\n  echarts.registerMap('Romania', res);\n  \n  queried = data.series.map(d => {\n    return {\n      'name': d.fields[1].labels['ISO'],\n      'value': d.fields[1].values.buffer[0].toFixed(2)\n    }\n  })\n  \n  queried = queried.map(d => {\n\t\treturn {\n      'name': d['name'],\n      'value': parseFloat(d['value'])\n    }  \n  })\n  \n  const min = queried.reduce((prev, curr) => prev['value'] < curr['value'] ? prev : curr)['value']\n  const max = queried.reduce((prev, curr) => prev['value'] > curr['value'] ? prev : curr)['value']\n\t\n  options = {\n    tooltip: {\n      trigger: 'item',\n      showDelay: 0,\n      transitionDuration: 0.2,\n      padding: 10,\n      formatter: '{a}<br>Megye: {b}<br>Max ár: {c} RON'\n    },\n    visualMap: {\n      left: 'right',\n\t\t\ttop: 'top',\n      min: min - 0.05,\n      max: max + 0.05,\n      text: ['RON'],\n      formatter: val => val.toFixed(2),\n      textStyle: {\n        \t'color': '#ccc'\n      },\n      inRange: {\n        color: ['#edf8e9','#bae4b3','#74c476','#31a354','#006d2c']\n      },\n      calculable: true,\n      realtime: true\n    },\n    toolbox: {\n      show: false,\n    },\n    series: [ \n      {\n        name: '📈 Legnagyobb üzemanyagárak (95-ös benzin)',\n        nameProperty: 'shapeISO',\n        type: 'map',\n        map: 'Romania',\n        data: queried,\n        itemStyle: {\n          borderColor: '#444',\n          borderWidth: '0.75'\n        },\n      \temphasis: {\n          label: {\n            color: '#fff'\n          },\n          itemStyle: {\n            areaColor: null\n          }\n        },\n      }\n    ],\n  }\t\n  \n  echartsInstance.setOption(options)\n})"
       },
       "pluginVersion": "v1.0",
       "targets": [
@@ -2212,12 +2230,12 @@
         "h": 15,
         "w": 10,
         "x": 12,
-        "y": 85
+        "y": 83
       },
       "id": 19,
       "options": {
         "followTheme": false,
-        "getOption": "$.get('public/maps/romania.geojson', function (res) {\n  echarts.registerMap('Romania', res);\n  \n  queried = data.series.map(d => {\n    return {\n      'name': d.fields[1].labels['ISO'],\n      'value': d.fields[1].values.buffer[0].toFixed(2)\n    }\n  })\n  \n  queried = queried.map(d => {\n\t\treturn {\n      'name': d['name'],\n      'value': parseFloat(d['value'])\n    }  \n  })\n  \n  const min = queried.reduce((prev, curr) => prev['value'] < curr['value'] ? prev : curr)['value']\n  const max = queried.reduce((prev, curr) => prev['value'] > curr['value'] ? prev : curr)['value']\n\t\n  options = {\n    tooltip: {\n      trigger: 'item',\n      showDelay: 0,\n      transitionDuration: 0.2,\n      padding: 10,\n      formatter: '{a}<br>Megye: {b}<br>Max ár: {c} RON'\n    },\n    visualMap: {\n      left: 'right',\n\t\t\ttop: 'top',\n      min: min - 0.05,\n      max: max + 0.05,\n      text: ['RON'],\n      textStyle: {\n        \t'color': '#ccc'\n      },\n      formatter: val => val.toFixed(2),\n      inRange: {\n        color: ['#ffffb2','#fed976','#feb24c','#fd8d3c','#f03b20','#bd0026']\n      },\n      calculable: true\n    },\n    toolbox: {\n      show: false,\n    },\n    series: [ \n      {\n        name: '📈 Legnagyobb üzemanyagárak (gázolaj)',\n        nameProperty: 'shapeISO',\n        type: 'map',\n        map: 'Romania',\n        data: queried,\n        itemStyle: {\n          borderColor: '#444',\n          borderWidth: '0.75'\n        },\n      \temphasis: {\n          label: {\n            color: '#fff'\n          },\n          itemStyle: {\n            areaColor: null\n          }\n        },\n      }\n    ],\n  }\t\n  \n  echartsInstance.setOption(options)\n})"
+        "getOption": "$.get('public/maps/romania.geojson', function (res) {\n  echarts.registerMap('Romania', res);\n  \n  queried = data.series.map(d => {\n    return {\n      'name': d.fields[1].labels['ISO'],\n      'value': d.fields[1].values.buffer[0].toFixed(2)\n    }\n  })\n  \n  queried = queried.map(d => {\n\t\treturn {\n      'name': d['name'],\n      'value': parseFloat(d['value'])\n    }  \n  })\n  \n  const min = queried.reduce((prev, curr) => prev['value'] < curr['value'] ? prev : curr)['value']\n  const max = queried.reduce((prev, curr) => prev['value'] > curr['value'] ? prev : curr)['value']\n\t\n  options = {\n    tooltip: {\n      trigger: 'item',\n      showDelay: 0,\n      transitionDuration: 0.2,\n      padding: 10,\n      formatter: '{a}<br>Megye: {b}<br>Max ár: {c} RON'\n    },\n    visualMap: {\n      left: 'right',\n\t\t\ttop: 'top',\n      min: min - 0.05,\n      max: max + 0.05,\n      text: ['RON'],\n      textStyle: {\n        \t'color': '#ccc'\n      },\n      formatter: val => val.toFixed(2),\n      inRange: {\n        color: ['#edf8e9','#bae4b3','#74c476','#31a354','#006d2c']\n      },\n      calculable: true\n    },\n    toolbox: {\n      show: false,\n    },\n    series: [ \n      {\n        name: '📈 Legnagyobb üzemanyagárak (gázolaj)',\n        nameProperty: 'shapeISO',\n        type: 'map',\n        map: 'Romania',\n        data: queried,\n        itemStyle: {\n          borderColor: '#444',\n          borderWidth: '0.75'\n        },\n      \temphasis: {\n          label: {\n            color: '#fff'\n          },\n          itemStyle: {\n            areaColor: null\n          }\n        },\n      }\n    ],\n  }\t\n  \n  echartsInstance.setOption(options)\n})"
       },
       "pluginVersion": "v1.0",
       "targets": [
@@ -2281,12 +2299,12 @@
         "h": 15,
         "w": 10,
         "x": 2,
-        "y": 100
+        "y": 98
       },
       "id": 20,
       "options": {
         "followTheme": false,
-        "getOption": "$.get('public/maps/romania.geojson', function (res) {\n  echarts.registerMap('Romania', res);\n  \n  queried = data.series.map(d => {\n    return {\n      'name': d.fields[1].labels['ISO'],\n      'value': d.fields[1].values.buffer[0].toFixed(2)\n    }\n  })\n  \n  queried = queried.map(d => {\n\t\treturn {\n      'name': d['name'],\n      'value': parseFloat(d['value'])\n    }  \n  })\n  \n  const min = queried.reduce((prev, curr) => prev['value'] < curr['value'] ? prev : curr)['value']\n  const max = queried.reduce((prev, curr) => prev['value'] > curr['value'] ? prev : curr)['value']\n\t\n  options = {\n    tooltip: {\n      trigger: 'item',\n      showDelay: 0,\n      transitionDuration: 0.2,\n      padding: 10,\n      formatter: '{a}<br>Megye: {b}<br>Max ár: {c} RON'\n    },\n    visualMap: {\n      left: 'right',\n\t\t\ttop: 'top',\n      min: min - 0.05,\n      max: max + 0.05,\n      text: ['RON'],\n      textStyle: {\n        \t'color': '#ccc'\n      },\n      inRange: {\n        color: ['#ffffb2','#fed976','#feb24c','#fd8d3c','#f03b20','#bd0026']\n      },\n      formatter: val => val.toFixed(2),\n      calculable: true\n    },\n    toolbox: {\n      show: false,\n    },\n    series: [ \n      {\n        name: '📈 Legnagyobb üzemanyagárak (prémium 95-ös benzin)',\n        nameProperty: 'shapeISO',\n        type: 'map',\n        map: 'Romania',\n        data: queried,\n        itemStyle: {\n          borderColor: '#444',\n          borderWidth: '0.75'\n        },\n      \temphasis: {\n          label: {\n            color: '#fff'\n          },\n          itemStyle: {\n            areaColor: null\n          }\n        },\n      }\n    ],\n  }\t\n  \n  echartsInstance.setOption(options)\n})"
+        "getOption": "$.get('public/maps/romania.geojson', function (res) {\n  echarts.registerMap('Romania', res);\n  \n  queried = data.series.map(d => {\n    return {\n      'name': d.fields[1].labels['ISO'],\n      'value': d.fields[1].values.buffer[0].toFixed(2)\n    }\n  })\n  \n  queried = queried.map(d => {\n\t\treturn {\n      'name': d['name'],\n      'value': parseFloat(d['value'])\n    }  \n  })\n  \n  const min = queried.reduce((prev, curr) => prev['value'] < curr['value'] ? prev : curr)['value']\n  const max = queried.reduce((prev, curr) => prev['value'] > curr['value'] ? prev : curr)['value']\n\t\n  options = {\n    tooltip: {\n      trigger: 'item',\n      showDelay: 0,\n      transitionDuration: 0.2,\n      padding: 10,\n      formatter: '{a}<br>Megye: {b}<br>Max ár: {c} RON'\n    },\n    visualMap: {\n      left: 'right',\n\t\t\ttop: 'top',\n      min: min - 0.05,\n      max: max + 0.05,\n      text: ['RON'],\n      textStyle: {\n        \t'color': '#ccc'\n      },\n      inRange: {\n        color: ['#edf8e9','#bae4b3','#74c476','#31a354','#006d2c']\n      },\n      formatter: val => val.toFixed(2),\n      calculable: true\n    },\n    toolbox: {\n      show: false,\n    },\n    series: [ \n      {\n        name: '📈 Legnagyobb üzemanyagárak (prémium 95-ös benzin)',\n        nameProperty: 'shapeISO',\n        type: 'map',\n        map: 'Romania',\n        data: queried,\n        itemStyle: {\n          borderColor: '#444',\n          borderWidth: '0.75'\n        },\n      \temphasis: {\n          label: {\n            color: '#fff'\n          },\n          itemStyle: {\n            areaColor: null\n          }\n        },\n      }\n    ],\n  }\t\n  \n  echartsInstance.setOption(options)\n})"
       },
       "pluginVersion": "v1.0",
       "targets": [
@@ -2350,12 +2368,12 @@
         "h": 15,
         "w": 10,
         "x": 12,
-        "y": 100
+        "y": 98
       },
       "id": 21,
       "options": {
         "followTheme": false,
-        "getOption": "$.get('public/maps/romania.geojson', function (res) {\n  echarts.registerMap('Romania', res);\n  \n  queried = data.series.map(d => {\n    return {\n      'name': d.fields[1].labels['ISO'],\n      'value': d.fields[1].values.buffer[0].toFixed(2)\n    }\n  })\n  \n  queried = queried.map(d => {\n\t\treturn {\n      'name': d['name'],\n      'value': parseFloat(d['value'])\n    }  \n  })\n  \n  const min = queried.reduce((prev, curr) => prev['value'] < curr['value'] ? prev : curr)['value']\n  const max = queried.reduce((prev, curr) => prev['value'] > curr['value'] ? prev : curr)['value']\n\t\n  options = {\n    tooltip: {\n      trigger: 'item',\n      showDelay: 0,\n      transitionDuration: 0.2,\n      padding: 10,\n      formatter: '{a}<br>Megye: {b}<br>Max ár: {c} RON'\n    },\n    visualMap: {\n      left: 'right',\n\t\t\ttop: 'top',\n      min: min - 0.05,\n      max: max + 0.05,\n      text: ['RON'],\n      textStyle: {\n        \t'color': '#ccc'\n      },\n      inRange: {\n        color: ['#ffffb2','#fed976','#feb24c','#fd8d3c','#f03b20','#bd0026']\n      },\n      calculable: true,\n      formatter: val => val.toFixed(2)\n    },\n    toolbox: {\n      show: false,\n    },\n    series: [ \n      {\n        name: '📈 Legnagyobb üzemanyagárak (prémium gázolaj)',\n        nameProperty: 'shapeISO',\n        type: 'map',\n        map: 'Romania',\n        data: queried,\n        itemStyle: {\n          borderColor: '#444',\n          borderWidth: '0.75'\n        },\n      \temphasis: {\n          label: {\n            color: '#fff'\n          },\n          itemStyle: {\n            areaColor: null\n          }\n        },\n      }\n    ],\n  }\t\n  \n  echartsInstance.setOption(options)\n})"
+        "getOption": "$.get('public/maps/romania.geojson', function (res) {\n  echarts.registerMap('Romania', res);\n  \n  queried = data.series.map(d => {\n    return {\n      'name': d.fields[1].labels['ISO'],\n      'value': d.fields[1].values.buffer[0].toFixed(2)\n    }\n  })\n  \n  queried = queried.map(d => {\n\t\treturn {\n      'name': d['name'],\n      'value': parseFloat(d['value'])\n    }  \n  })\n  \n  const min = queried.reduce((prev, curr) => prev['value'] < curr['value'] ? prev : curr)['value']\n  const max = queried.reduce((prev, curr) => prev['value'] > curr['value'] ? prev : curr)['value']\n\t\n  options = {\n    tooltip: {\n      trigger: 'item',\n      showDelay: 0,\n      transitionDuration: 0.2,\n      padding: 10,\n      formatter: '{a}<br>Megye: {b}<br>Max ár: {c} RON'\n    },\n    visualMap: {\n      left: 'right',\n\t\t\ttop: 'top',\n      min: min - 0.05,\n      max: max + 0.05,\n      text: ['RON'],\n      textStyle: {\n        \t'color': '#ccc'\n      },\n      inRange: {\n        color: ['#edf8e9','#bae4b3','#74c476','#31a354','#006d2c']\n      },\n      calculable: true,\n      formatter: val => val.toFixed(2)\n    },\n    toolbox: {\n      show: false,\n    },\n    series: [ \n      {\n        name: '📈 Legnagyobb üzemanyagárak (prémium gázolaj)',\n        nameProperty: 'shapeISO',\n        type: 'map',\n        map: 'Romania',\n        data: queried,\n        itemStyle: {\n          borderColor: '#444',\n          borderWidth: '0.75'\n        },\n      \temphasis: {\n          label: {\n            color: '#fff'\n          },\n          itemStyle: {\n            areaColor: null\n          }\n        },\n      }\n    ],\n  }\t\n  \n  echartsInstance.setOption(options)\n})"
       },
       "pluginVersion": "v1.0",
       "targets": [
@@ -2608,7 +2626,7 @@
         "h": 11,
         "w": 12,
         "x": 0,
-        "y": 115
+        "y": 113
       },
       "id": 55,
       "options": {
@@ -2899,7 +2917,7 @@
         "h": 11,
         "w": 12,
         "x": 12,
-        "y": 115
+        "y": 113
       },
       "id": 54,
       "options": {
@@ -3190,7 +3208,7 @@
         "h": 11,
         "w": 12,
         "x": 0,
-        "y": 126
+        "y": 124
       },
       "id": 57,
       "options": {
@@ -3481,7 +3499,7 @@
         "h": 11,
         "w": 12,
         "x": 12,
-        "y": 126
+        "y": 124
       },
       "id": 56,
       "options": {
@@ -3707,7 +3725,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 137
+        "y": 135
       },
       "id": 59,
       "options": {
@@ -3949,7 +3967,7 @@
         "h": 9,
         "w": 12,
         "x": 12,
-        "y": 137
+        "y": 135
       },
       "id": 60,
       "options": {
@@ -4191,7 +4209,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 146
+        "y": 144
       },
       "id": 62,
       "options": {
@@ -4433,7 +4451,7 @@
         "h": 9,
         "w": 12,
         "x": 12,
-        "y": 146
+        "y": 144
       },
       "id": 61,
       "options": {
@@ -4548,7 +4566,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 155
+        "y": 153
       },
       "id": 47,
       "panels": [],
@@ -4564,7 +4582,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "fixedColor": "orange",
+            "fixedColor": "#31a354",
             "mode": "fixed"
           },
           "custom": {
@@ -4619,7 +4637,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 156
+        "y": 154
       },
       "id": 32,
       "options": {
@@ -4693,7 +4711,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "fixedColor": "orange",
+            "fixedColor": "#31a354",
             "mode": "fixed"
           },
           "custom": {
@@ -4740,7 +4758,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "RON"
         },
         "overrides": []
       },
@@ -4748,7 +4767,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 156
+        "y": 154
       },
       "id": 50,
       "options": {
@@ -4822,7 +4841,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "fixedColor": "orange",
+            "fixedColor": "#31a354",
             "mode": "fixed"
           },
           "custom": {
@@ -4877,7 +4896,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 164
+        "y": 162
       },
       "id": 33,
       "options": {
@@ -4951,7 +4970,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "fixedColor": "orange",
+            "fixedColor": "#31a354",
             "mode": "fixed"
           },
           "custom": {
@@ -4998,7 +5017,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "RON"
         },
         "overrides": []
       },
@@ -5006,7 +5026,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 164
+        "y": 162
       },
       "id": 51,
       "options": {
@@ -5080,7 +5100,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "fixedColor": "orange",
+            "fixedColor": "#31a354",
             "mode": "fixed"
           },
           "custom": {
@@ -5135,7 +5155,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 172
+        "y": 170
       },
       "id": 35,
       "options": {
@@ -5209,7 +5229,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "fixedColor": "orange",
+            "fixedColor": "#31a354",
             "mode": "fixed"
           },
           "custom": {
@@ -5256,7 +5276,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "RON"
         },
         "overrides": []
       },
@@ -5264,7 +5285,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 172
+        "y": 170
       },
       "id": 52,
       "options": {
@@ -5338,7 +5359,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "fixedColor": "orange",
+            "fixedColor": "#31a354",
             "mode": "fixed"
           },
           "custom": {
@@ -5393,7 +5414,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 180
+        "y": 178
       },
       "id": 34,
       "options": {
@@ -5467,7 +5488,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "fixedColor": "orange",
+            "fixedColor": "#31a354",
             "mode": "fixed"
           },
           "custom": {
@@ -5514,7 +5535,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "RON"
         },
         "overrides": []
       },
@@ -5522,7 +5544,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 180
+        "y": 178
       },
       "id": 53,
       "options": {
@@ -5593,7 +5615,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 188
+        "y": 186
       },
       "id": 49,
       "panels": [],
@@ -5610,7 +5632,7 @@
         "defaults": {
           "color": {
             "fixedColor": "#FADE2A",
-            "mode": "continuous-YlRd"
+            "mode": "continuous-GrYlRd"
           },
           "custom": {
             "align": "auto",
@@ -5721,7 +5743,7 @@
         "h": 16,
         "w": 24,
         "x": 0,
-        "y": 189
+        "y": 187
       },
       "id": 43,
       "options": {
@@ -5854,6 +5876,6 @@
   "timezone": "Europe/Bucharest",
   "title": "Gas Price Monitorization",
   "uid": "TfYiDrUnz",
-  "version": 151,
+  "version": 154,
   "weekStart": "monday"
 }
