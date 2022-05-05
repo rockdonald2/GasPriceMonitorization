@@ -34,3 +34,5 @@ then
     echo "Failed to execute auto-pull scrape script."
     exit 1
 fi
+
+echo "Successfully started and setup all services."
