@@ -26,7 +26,7 @@
   "fiscalYearStartMonth": 0,
   "graphTooltip": 1,
   "id": 1,
-  "iteration": 1651776358225,
+  "iteration": 1651839324862,
   "links": [],
   "liveNow": true,
   "panels": [
@@ -141,7 +141,7 @@
         "type": "influxdb",
         "uid": "_MwRv987k"
       },
-      "description": "Magába foglalja minden üzemanyagkút minden üzemanyagtípusának értékét.",
+      "description": "Több kiválasztott periódus esetében kumulált érték.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -196,6 +196,8 @@
           "measurement": "GasPrice",
           "orderByTime": "ASC",
           "policy": "GasPriceMonitorization",
+          "query": "show tag values exact cardinality with key = \"Addr\"",
+          "rawQuery": true,
           "refId": "A",
           "resultFormat": "table",
           "select": [
@@ -215,7 +217,7 @@
           "tags": []
         }
       ],
-      "title": "Mérési pont adata alapján",
+      "title": "Benzinkút mérési adata alapján",
       "transparent": true,
       "type": "stat"
     },
