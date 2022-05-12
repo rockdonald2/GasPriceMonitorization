@@ -37,6 +37,8 @@ Later augmented with Brent crude oil prices to analyze connections between the t
 
 ### .env schema
 
+🧐 Should use AWS Secrets Manager for this.
+
 ```plain
 DB_USER=root
 DB_PWD=root
