@@ -26,7 +26,7 @@
   "fiscalYearStartMonth": 0,
   "graphTooltip": 1,
   "id": 1,
-  "iteration": 1652162587963,
+  "iteration": 1652605553548,
   "links": [],
   "liveNow": true,
   "panels": [
@@ -130,7 +130,7 @@
       },
       "id": 18,
       "options": {
-        "content": "### Naponta frissülő romániai üzemanyagár figyelő, monitorizáló és vizualizáló dashboard, amelynek célja, hogy átfogó képet nyújtson a romániai üzemanyagpiacról.\r\n\r\n---\r\n\r\nAz adatok top-down megközelítésben közli: először romániai szinten, majd megyei, végül kereskedőin.\r\n\r\n_Az adatok naponta (általában 19.30-kor) kerülnek frissítésre a [peco-online.ro](https://www.peco-online.ro/) adatbázisából._  \r\n_A dashboard-ot működtető kód elérhető a [GasPriceMonitorization](https://github.com/rockdonald2/GasPriceMonitorization) GitHub repo-n._  \r\n\r\n2022 | Lukács Zsolt: [elérhetőség](https://www.linkedin.com/in/zsolt-lukacs/)",
+        "content": "### Naponta frissülő romániai üzemanyagár figyelő, monitorizáló és vizualizáló dashboard, amelynek célja, hogy átfogó képet nyújtson a romániai üzemanyagpiacról.\r\n\r\n---\r\n\r\nAz adatok top-down megközelítésben vannak közölve: először romániai szinten, majd megyei, végül kereskedőin.\r\n\r\n_Az adatok naponta kerülnek frissítésre a [peco-online.ro](https://www.peco-online.ro/) adatbázisából._  \r\n_A dashboard-ot működtető kód elérhető a [GasPriceMonitorization](https://github.com/rockdonald2/GasPriceMonitorization) GitHub repo-n._  \r\n\r\n2022 | Lukács Zsolt: [elérhetőség](https://www.linkedin.com/in/zsolt-lukacs/)",
         "mode": "markdown"
       },
       "pluginVersion": "v1.0",
@@ -6075,6 +6075,6 @@
   "timezone": "Europe/Bucharest",
   "title": "Gas Price Monitorization",
   "uid": "TfYiDrUnz",
-  "version": 164,
+  "version": 165,
   "weekStart": "monday"
 }
