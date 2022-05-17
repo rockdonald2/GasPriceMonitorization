@@ -26,7 +26,7 @@
   "fiscalYearStartMonth": 0,
   "graphTooltip": 1,
   "id": 1,
-  "iteration": 1652770349039,
+  "iteration": 1652812781310,
   "links": [],
   "liveNow": true,
   "panels": [
@@ -1335,39 +1335,14 @@
             "seriesBy": "max"
           },
           "custom": {
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 1,
+            "fillOpacity": 80,
             "gradientMode": "none",
             "hideFrom": {
               "legend": false,
               "tooltip": false,
               "viz": false
             },
-            "lineInterpolation": "linear",
-            "lineStyle": {
-              "dash": [
-                0,
-                10
-              ],
-              "fill": "dot"
-            },
-            "lineWidth": 2,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": true,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
+            "lineWidth": 1
           },
           "mappings": [],
           "thresholds": {
@@ -1404,14 +1379,11 @@
       },
       "id": 25,
       "options": {
+        "bucketOffset": 0,
         "legend": {
           "calcs": [],
           "displayMode": "hidden",
           "placement": "bottom"
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "none"
         }
       },
       "targets": [
@@ -1448,7 +1420,7 @@
         }
       ],
       "title": "📈 Elmúlt periódus benzinárai",
-      "type": "timeseries"
+      "type": "histogram"
     },
     {
       "datasource": {
@@ -1458,43 +1430,17 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "continuous-GrYlRd",
-            "seriesBy": "max"
+            "mode": "thresholds"
           },
           "custom": {
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 1,
+            "fillOpacity": 80,
             "gradientMode": "none",
             "hideFrom": {
               "legend": false,
               "tooltip": false,
               "viz": false
             },
-            "lineInterpolation": "linear",
-            "lineStyle": {
-              "dash": [
-                0,
-                10
-              ],
-              "fill": "dot"
-            },
-            "lineWidth": 2,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": true,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
+            "lineWidth": 1
           },
           "mappings": [],
           "thresholds": {
@@ -1517,14 +1463,11 @@
       },
       "id": 26,
       "options": {
+        "bucketOffset": 0,
         "legend": {
           "calcs": [],
           "displayMode": "hidden",
           "placement": "bottom"
-        },
-        "tooltip": {
-          "mode": "single",
-          "sort": "none"
         }
       },
       "pluginVersion": "v1.0",
@@ -1568,7 +1511,7 @@
         }
       ],
       "title": "📈 Elmúlt periódus gázolajárai",
-      "type": "timeseries"
+      "type": "histogram"
     },
     {
       "datasource": {
@@ -1582,39 +1525,14 @@
             "seriesBy": "max"
           },
           "custom": {
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 1,
+            "fillOpacity": 80,
             "gradientMode": "none",
             "hideFrom": {
               "legend": false,
               "tooltip": false,
               "viz": false
             },
-            "lineInterpolation": "linear",
-            "lineStyle": {
-              "dash": [
-                0,
-                10
-              ],
-              "fill": "dot"
-            },
-            "lineWidth": 2,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": true,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
+            "lineWidth": 1
           },
           "mappings": [],
           "thresholds": {
@@ -1651,14 +1569,11 @@
       },
       "id": 27,
       "options": {
+        "bucketOffset": 0,
         "legend": {
           "calcs": [],
           "displayMode": "hidden",
           "placement": "bottom"
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "none"
         }
       },
       "targets": [
@@ -1695,7 +1610,7 @@
         }
       ],
       "title": "📈 Elmúlt periódus prémium benzinárai",
-      "type": "timeseries"
+      "type": "histogram"
     },
     {
       "datasource": {
@@ -1705,43 +1620,17 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "continuous-RdYlGr",
-            "seriesBy": "max"
+            "mode": "continuous-GrYlRd"
           },
           "custom": {
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 1,
+            "fillOpacity": 80,
             "gradientMode": "none",
             "hideFrom": {
               "legend": false,
               "tooltip": false,
               "viz": false
             },
-            "lineInterpolation": "linear",
-            "lineStyle": {
-              "dash": [
-                0,
-                10
-              ],
-              "fill": "dot"
-            },
-            "lineWidth": 2,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": true,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
+            "lineWidth": 1
           },
           "mappings": [],
           "thresholds": {
@@ -1750,25 +1639,15 @@
               {
                 "color": "green",
                 "value": null
-              }
-            ]
-          },
-          "unit": "RON"
-        },
-        "overrides": [
-          {
-            "matcher": {
-              "id": "byName",
-              "options": "Price"
-            },
-            "properties": [
+              },
               {
-                "id": "displayName",
-                "value": "Ár"
+                "color": "red",
+                "value": 80
               }
             ]
           }
-        ]
+        },
+        "overrides": []
       },
       "gridPos": {
         "h": 9,
@@ -1778,14 +1657,12 @@
       },
       "id": 28,
       "options": {
+        "bucketOffset": 0,
+        "combine": false,
         "legend": {
           "calcs": [],
           "displayMode": "hidden",
           "placement": "bottom"
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "none"
         }
       },
       "targets": [
@@ -1822,7 +1699,7 @@
         }
       ],
       "title": "📈 Elmúlt periódus prémium gázolajárai",
-      "type": "timeseries"
+      "type": "histogram"
     },
     {
       "datasource": {
@@ -1836,39 +1713,14 @@
             "seriesBy": "max"
           },
           "custom": {
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 1,
+            "fillOpacity": 80,
             "gradientMode": "none",
             "hideFrom": {
               "legend": false,
               "tooltip": false,
               "viz": false
             },
-            "lineInterpolation": "linear",
-            "lineStyle": {
-              "dash": [
-                0,
-                10
-              ],
-              "fill": "dot"
-            },
-            "lineWidth": 2,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": true,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
+            "lineWidth": 1
           },
           "mappings": [],
           "thresholds": {
@@ -1905,14 +1757,11 @@
       },
       "id": 29,
       "options": {
+        "bucketOffset": 0,
         "legend": {
           "calcs": [],
           "displayMode": "hidden",
           "placement": "bottom"
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "none"
         }
       },
       "targets": [
@@ -1949,7 +1798,7 @@
         }
       ],
       "title": "📈 Elmúlt periódus AdBlue árai",
-      "type": "timeseries"
+      "type": "histogram"
     },
     {
       "datasource": {
@@ -1959,43 +1808,17 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "continuous-RdYlGr",
-            "seriesBy": "max"
+            "mode": "thresholds"
           },
           "custom": {
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 1,
+            "fillOpacity": 80,
             "gradientMode": "none",
             "hideFrom": {
               "legend": false,
               "tooltip": false,
               "viz": false
             },
-            "lineInterpolation": "linear",
-            "lineStyle": {
-              "dash": [
-                0,
-                10
-              ],
-              "fill": "dot"
-            },
-            "lineWidth": 2,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": true,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
+            "lineWidth": 1
           },
           "mappings": [],
           "thresholds": {
@@ -2006,23 +1829,9 @@
                 "value": null
               }
             ]
-          },
-          "unit": "RON"
-        },
-        "overrides": [
-          {
-            "matcher": {
-              "id": "byName",
-              "options": "Price"
-            },
-            "properties": [
-              {
-                "id": "displayName",
-                "value": "Ár"
-              }
-            ]
           }
-        ]
+        },
+        "overrides": []
       },
       "gridPos": {
         "h": 9,
@@ -2032,16 +1841,14 @@
       },
       "id": 30,
       "options": {
+        "combine": false,
         "legend": {
           "calcs": [],
           "displayMode": "hidden",
           "placement": "bottom"
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "none"
         }
       },
+      "pluginVersion": "8.5.2",
       "targets": [
         {
           "datasource": {
@@ -2076,7 +1883,7 @@
         }
       ],
       "title": "📈 Elmúlt periódus LPG árai",
-      "type": "timeseries"
+      "type": "histogram"
     },
     {
       "datasource": {
@@ -6255,6 +6062,6 @@
   "timezone": "Europe/Bucharest",
   "title": "Gas Price Monitorization",
   "uid": "TfYiDrUnz",
-  "version": 186,
+  "version": 190,
   "weekStart": "monday"
 }

@@ -50,12 +50,12 @@ DB_PORT=8086
 
 ### Screenshots
 
-![S1](screenshots/Screenshot%202022-05-17%20162017.png)
-![S2](screenshots/Screenshot%202022-05-17%20162034.png)
-![S3](screenshots/Screenshot%202022-05-17%20162046.png)
-![S4](screenshots/Screenshot%202022-05-17%20162056.png)
-![S5](screenshots/Screenshot%202022-05-17%20162121.png)
-![S6](screenshots/Screenshot%202022-05-17%20162132.png)
-![S7](screenshots/Screenshot%202022-05-17%20162145.png)
-![S8](screenshots/Screenshot%202022-05-17%20162156.png)
-![S9](screenshots/Screenshot%202022-05-17%20162208.png)
+![S1](screenshots/s1.png)
+![S2](screenshots/s2.png)
+![S3](screenshots/s3.png)
+![S4](screenshots/s4.png)
+![S5](screenshots/s5.png)
+![S6](screenshots/s6.png)
+![S7](screenshots/s7.png)
+![S8](screenshots/s8.png)
+![S9](screenshots/s9.png)
