@@ -26,7 +26,7 @@
   "fiscalYearStartMonth": 0,
   "graphTooltip": 1,
   "id": 1,
-  "iteration": 1652817220535,
+  "iteration": 1652818396296,
   "links": [],
   "liveNow": true,
   "panels": [
@@ -1998,7 +1998,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "thresholds"
+            "mode": "continuous-GrYlRd"
           },
           "custom": {
             "align": "auto",
@@ -2130,7 +2130,7 @@
           ]
         }
       ],
-      "title": "📈 Vásáronkénti átlagárfejlődés (95-ös benzin)",
+      "title": "📈 Városonkénti átlagár (95-ös benzin)",
       "type": "table"
     },
     {
@@ -2142,7 +2142,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "thresholds"
+            "mode": "continuous-GrYlRd"
           },
           "custom": {
             "align": "auto",
@@ -2274,7 +2274,7 @@
           ]
         }
       ],
-      "title": "📈 Vásáronkénti átlagárfejlődés (Gázolaj)",
+      "title": "📈 Városonkénti átlagár (Gázolaj)",
       "type": "table"
     },
     {
@@ -2286,7 +2286,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "thresholds"
+            "mode": "continuous-GrYlRd"
           },
           "custom": {
             "align": "auto",
@@ -2418,7 +2418,7 @@
           ]
         }
       ],
-      "title": "📈 Vásáronkénti átlagárfejlődés (Prémium benzin)",
+      "title": "📈 Városonkénti átlagár (Prémium benzin)",
       "type": "table"
     },
     {
@@ -2430,7 +2430,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "thresholds"
+            "mode": "continuous-GrYlRd"
           },
           "custom": {
             "align": "auto",
@@ -2562,7 +2562,7 @@
           ]
         }
       ],
-      "title": "📈 Vásáronkénti átlagárfejlődés (Prémium gázolaj)",
+      "title": "📈 Városonkénti átlagár (Prémium gázolaj)",
       "type": "table"
     },
     {
@@ -6623,7 +6623,7 @@
     ]
   },
   "time": {
-    "from": "now-2d",
+    "from": "now-30d",
     "to": "now"
   },
   "timepicker": {
@@ -6644,6 +6644,6 @@
   "timezone": "Europe/Bucharest",
   "title": "Gas Price Monitorization",
   "uid": "TfYiDrUnz",
-  "version": 198,
+  "version": 202,
   "weekStart": "monday"
 }

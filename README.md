@@ -59,4 +59,3 @@ DB_PORT=8086
 ![S7](screenshots/s7.png)
 ![S8](screenshots/s8.png)
 ![S9](screenshots/s9.png)
-![S10](screenshots/s10.png)
