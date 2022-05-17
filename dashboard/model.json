@@ -2684,6 +2684,55 @@
         "type": "influxdb",
         "uid": "_MwRv987k"
       },
+      "description": "Megmutatja, hogy egyes városokban hány benzinkút található.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-RdYlGr"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 24,
+        "x": 0,
+        "y": 130
+      },
+      "id": 76,
+      "options": {
+        "tiling": "treemapSquarify"
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "_MwRv987k"
+          },
+          "query": "SELECT COUNT(DISTINCT \"Addr\") as \"TagCount\"\nFROM (\n\tSELECT \"time\",\"Addr\",\"Price\"\n\tFROM \"GasPrice\"\n\tWHERE $timeFilter\n)\nGROUP BY City",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "table"
+        }
+      ],
+      "title": "📊 Benzinkút egységbeli részesedésmegosztás városonként",
+      "type": "marcusolsson-treemap-panel"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "_MwRv987k"
+      },
       "description": "Bemutatja hogyan oszlanak meg egységszámban a kereskedők.",
       "fieldConfig": {
         "defaults": {
@@ -2711,7 +2760,7 @@
         "h": 11,
         "w": 24,
         "x": 0,
-        "y": 130
+        "y": 140
       },
       "id": 73,
       "options": {
@@ -2956,7 +3005,7 @@
         "h": 11,
         "w": 12,
         "x": 0,
-        "y": 141
+        "y": 151
       },
       "id": 55,
       "options": {
@@ -3247,7 +3296,7 @@
         "h": 11,
         "w": 12,
         "x": 12,
-        "y": 141
+        "y": 151
       },
       "id": 54,
       "options": {
@@ -3538,7 +3587,7 @@
         "h": 11,
         "w": 12,
         "x": 0,
-        "y": 152
+        "y": 162
       },
       "id": 57,
       "options": {
@@ -3829,7 +3878,7 @@
         "h": 11,
         "w": 12,
         "x": 12,
-        "y": 152
+        "y": 162
       },
       "id": 56,
       "options": {
@@ -4055,7 +4104,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 163
+        "y": 173
       },
       "id": 59,
       "options": {
@@ -4297,7 +4346,7 @@
         "h": 9,
         "w": 12,
         "x": 12,
-        "y": 163
+        "y": 173
       },
       "id": 60,
       "options": {
@@ -4539,7 +4588,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 172
+        "y": 182
       },
       "id": 62,
       "options": {
@@ -4781,7 +4830,7 @@
         "h": 9,
         "w": 12,
         "x": 12,
-        "y": 172
+        "y": 182
       },
       "id": 61,
       "options": {
@@ -4896,7 +4945,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 181
+        "y": 191
       },
       "id": 47,
       "panels": [],
@@ -4967,7 +5016,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 182
+        "y": 192
       },
       "id": 32,
       "options": {
@@ -5097,7 +5146,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 182
+        "y": 192
       },
       "id": 50,
       "options": {
@@ -5226,7 +5275,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 190
+        "y": 200
       },
       "id": 33,
       "options": {
@@ -5356,7 +5405,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 190
+        "y": 200
       },
       "id": 51,
       "options": {
@@ -5485,7 +5534,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 198
+        "y": 208
       },
       "id": 35,
       "options": {
@@ -5615,7 +5664,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 198
+        "y": 208
       },
       "id": 52,
       "options": {
@@ -5744,7 +5793,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 206
+        "y": 216
       },
       "id": 34,
       "options": {
@@ -5874,7 +5923,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 206
+        "y": 216
       },
       "id": 53,
       "options": {
@@ -5945,7 +5994,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 214
+        "y": 224
       },
       "id": 49,
       "panels": [],
@@ -6073,7 +6122,7 @@
         "h": 16,
         "w": 24,
         "x": 0,
-        "y": 215
+        "y": 225
       },
       "id": 43,
       "options": {
@@ -6206,6 +6255,6 @@
   "timezone": "Europe/Bucharest",
   "title": "Gas Price Monitorization",
   "uid": "TfYiDrUnz",
-  "version": 181,
+  "version": 186,
   "weekStart": "monday"
 }
