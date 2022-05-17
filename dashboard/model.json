@@ -26,7 +26,7 @@
   "fiscalYearStartMonth": 0,
   "graphTooltip": 1,
   "id": 1,
-  "iteration": 1652605553548,
+  "iteration": 1652770349039,
   "links": [],
   "liveNow": true,
   "panels": [
@@ -46,7 +46,8 @@
         "content": "# 🚗 Üzemanyagárak Romániában 🇷🇴",
         "mode": "markdown"
       },
-      "pluginVersion": "v1.0",
+      "pluginVersion": "8.5.2",
+      "transparent": true,
       "type": "text"
     },
     {
@@ -65,7 +66,7 @@
         "content": "\r\n\r\n<table style=\"width:100%; height:100%;border:0px solid black;\">\r\n     <td style=\"text-align: center;vertical-align: middle;border:0px solid black; \">\r\n       <img align=\"center\" src=\"https://econ.ubbcluj.ro/galerie_foto/poze/logo-FSEGA-new-white-01.png\" />\r\n     </td>\r\n</table>",
         "mode": "html"
       },
-      "pluginVersion": "v1.0",
+      "pluginVersion": "8.5.2",
       "transparent": true,
       "type": "text"
     },
@@ -133,7 +134,8 @@
         "content": "### Naponta frissülő romániai üzemanyagár figyelő, monitorizáló és vizualizáló dashboard, amelynek célja, hogy átfogó képet nyújtson a romániai üzemanyagpiacról.\r\n\r\n---\r\n\r\nAz adatok top-down megközelítésben vannak közölve: először romániai szinten, majd megyei, végül kereskedőin.\r\n\r\n_Az adatok naponta kerülnek frissítésre a [peco-online.ro](https://www.peco-online.ro/) adatbázisából._  \r\n_A dashboard-ot működtető kód elérhető a [GasPriceMonitorization](https://github.com/rockdonald2/GasPriceMonitorization) GitHub repo-n._  \r\n\r\n2022 | Lukács Zsolt: [elérhetőség](https://www.linkedin.com/in/zsolt-lukacs/)",
         "mode": "markdown"
       },
-      "pluginVersion": "v1.0",
+      "pluginVersion": "8.5.2",
+      "transparent": true,
       "type": "text"
     },
     {
@@ -185,7 +187,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "v1.0",
+      "pluginVersion": "8.5.2",
       "targets": [
         {
           "datasource": {
@@ -280,9 +282,10 @@
           "fields": "",
           "values": true
         },
+        "text": {},
         "textMode": "value_and_name"
       },
-      "pluginVersion": "v1.0",
+      "pluginVersion": "8.5.2",
       "targets": [
         {
           "datasource": {
@@ -1206,7 +1209,7 @@
         "type": "influxdb",
         "uid": "_MwRv987k"
       },
-      "description": "Naponta frissített Brent nyersolajár.",
+      "description": "Naponta frissített Brent nyersolaj-záróár.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -2632,6 +2635,85 @@
         "type": "influxdb",
         "uid": "_MwRv987k"
       },
+      "description": "Bemutatja hogyan oszlanak meg egységszámban a kereskedők.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-RdYlGr"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 11,
+        "w": 24,
+        "x": 0,
+        "y": 120
+      },
+      "id": 73,
+      "options": {
+        "colorByField": "TagCount",
+        "labelFields": [],
+        "sizeField": "TagCount",
+        "textField": "Vendor",
+        "tiling": "treemapSquarify"
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "_MwRv987k"
+          },
+          "groupBy": [
+            {
+              "params": [
+                "Addr"
+              ],
+              "type": "tag"
+            }
+          ],
+          "measurement": "GasPrice",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT COUNT(DISTINCT \"Addr\") as \"TagCount\"\nFROm (\n\tSELECT \"time\",\"Addr\",\"Price\"\n\tFROM \"GasPrice\"\n\tWHERE $timeFilter\n)\nGROUP BY Vendor",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "table",
+          "select": [
+            [
+              {
+                "params": [
+                  "Price"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "title": "📊 Benzinkút egységbeli részesedésmegosztás",
+      "type": "marcusolsson-treemap-panel"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "_MwRv987k"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -2825,7 +2907,7 @@
         "h": 11,
         "w": 12,
         "x": 0,
-        "y": 120
+        "y": 131
       },
       "id": 55,
       "options": {
@@ -3116,7 +3198,7 @@
         "h": 11,
         "w": 12,
         "x": 12,
-        "y": 120
+        "y": 131
       },
       "id": 54,
       "options": {
@@ -3407,7 +3489,7 @@
         "h": 11,
         "w": 12,
         "x": 0,
-        "y": 131
+        "y": 142
       },
       "id": 57,
       "options": {
@@ -3698,7 +3780,7 @@
         "h": 11,
         "w": 12,
         "x": 12,
-        "y": 131
+        "y": 142
       },
       "id": 56,
       "options": {
@@ -3924,7 +4006,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 142
+        "y": 153
       },
       "id": 59,
       "options": {
@@ -4166,7 +4248,7 @@
         "h": 9,
         "w": 12,
         "x": 12,
-        "y": 142
+        "y": 153
       },
       "id": 60,
       "options": {
@@ -4408,7 +4490,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 151
+        "y": 162
       },
       "id": 62,
       "options": {
@@ -4650,7 +4732,7 @@
         "h": 9,
         "w": 12,
         "x": 12,
-        "y": 151
+        "y": 162
       },
       "id": 61,
       "options": {
@@ -4765,7 +4847,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 160
+        "y": 171
       },
       "id": 47,
       "panels": [],
@@ -4836,7 +4918,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 161
+        "y": 172
       },
       "id": 32,
       "options": {
@@ -4966,7 +5048,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 161
+        "y": 172
       },
       "id": 50,
       "options": {
@@ -5095,7 +5177,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 169
+        "y": 180
       },
       "id": 33,
       "options": {
@@ -5225,7 +5307,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 169
+        "y": 180
       },
       "id": 51,
       "options": {
@@ -5354,7 +5436,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 177
+        "y": 188
       },
       "id": 35,
       "options": {
@@ -5484,7 +5566,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 177
+        "y": 188
       },
       "id": 52,
       "options": {
@@ -5613,7 +5695,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 185
+        "y": 196
       },
       "id": 34,
       "options": {
@@ -5743,7 +5825,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 185
+        "y": 196
       },
       "id": 53,
       "options": {
@@ -5814,7 +5896,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 193
+        "y": 204
       },
       "id": 49,
       "panels": [],
@@ -5942,7 +6024,7 @@
         "h": 16,
         "w": 24,
         "x": 0,
-        "y": 194
+        "y": 205
       },
       "id": 43,
       "options": {
@@ -5957,7 +6039,7 @@
         "showHeader": true,
         "sortBy": []
       },
-      "pluginVersion": "v1.0",
+      "pluginVersion": "8.5.2",
       "targets": [
         {
           "datasource": {
@@ -6075,6 +6157,6 @@
   "timezone": "Europe/Bucharest",
   "title": "Gas Price Monitorization",
   "uid": "TfYiDrUnz",
-  "version": 165,
+  "version": 176,
   "weekStart": "monday"
 }
